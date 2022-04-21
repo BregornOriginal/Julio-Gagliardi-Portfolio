@@ -3,7 +3,7 @@
 }
 
 .ptitle {
-  font-size: 30px;
+  font-size: 20px;
   color: white;
   display: flex;
   flex-direction: row;
@@ -15,7 +15,7 @@
   display: flex;
   flex-wrap: nowrap;
   background-color: #3c3a39;
-  width: 375px;
+  width: 390px;
   height: 92px;
   flex-direction: row-reverse;
   align-items: center;
@@ -40,7 +40,7 @@
   flex-direction: column;
   align-items: flex-start;
   position: absolute;
-  width: 375px;
+  width: 390px;
   height: 100%;
   left: 0;
   top: 92px;
@@ -55,7 +55,7 @@
   align-items: center;
 }
 
-h2 {
+h1 {
   width: 327px;
   height: 124px;
   left: 24px;
@@ -66,7 +66,7 @@ h2 {
   flex-grow: 0;
   line-height: 64px;
   letter-spacing: 0.37px;
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
 }
 
 h3 {
@@ -89,6 +89,8 @@ p {
 
 .container-icons {
   display: flex;
+  position: absolute;
+  z-index: 1;
   align-items: center;
   padding: 0;
   margin: -6px 33px;
