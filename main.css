@@ -1,0 +1,40 @@
+* {
+  width: 375px;
+}
+p {
+  font-size: 30px;
+  color: white;
+}
+.app-header {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: #3c3a39;
+  width: 375px;
+  height: 92px;
+  flex-direction: row-reverse;
+  align-items: center;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.options-button {
+  background-color: #3c3a39;
+  height: 40px;
+  width: 40px;
+  left: 311px;
+  top: 4px;
+  border-radius: 8px;
+  padding: 8px;
+}
+.menu-button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  left: 328px;
+  top: 17px;
+  border-radius: 8px;
+}
