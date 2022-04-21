@@ -1,0 +1,21 @@
+* {
+  width: 375px;
+}
+.app-header {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: antiquewhite;
+  width: 375px;
+  height: 92px;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.options-button {
+  background-color: antiquewhite;
+  height: 40px;
+  width: 40px;
+  left: 311px;
+  top: 4px;
+  border-radius: 8px;
+  padding: 8px;
+}
