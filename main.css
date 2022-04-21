@@ -1,9 +1,13 @@
 * {
   width: 375px;
 }
-p {
+.ptitle {
   font-size: 30px;
   color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 12px;
 }
 .app-header {
   display: flex;
@@ -25,15 +29,15 @@ p {
   top: 4px;
   border-radius: 8px;
   padding: 8px;
+  border: none;
 }
 #main-section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 120px 24px;
   position: absolute;
   width: 375px;
-  height: 590px;
+  height: 100%;
   left: 0px;
   top: 92px;
 
@@ -98,15 +102,12 @@ p {
 
 .container-icons {
   display: flex;
-  flex: none;
-  order: 3;
-  flex-grow: 0;
-  margin: 12px 0px;
+  align-items: center;
+  padding: 0px;
+  margin: -6px 33px;
   height: 40px;
-  width: 200px;
-  left: 24px;
-  top: 430px;
-  border-radius: 0px;
+  width: 214px;
+  justify-content: space-around;
 }
 .social-icons {
   display: flex;
@@ -115,13 +116,14 @@ p {
   justify-content: space-between;
 }
 .main-icons {
-  width: 17.985200881958008px;
+  width: 25.985201px;
 }
 .poligon-illustration {
   position: absolute;
   width: 252.89px;
-  left: 170.1px;
-  top: 300px;
+  left: 122.1px;
+  top: 210px;
+}
 .menu-button {
   display: flex;
   flex-direction: row;
