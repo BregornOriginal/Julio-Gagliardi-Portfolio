@@ -97,6 +97,7 @@ p {
   height: 40px;
   width: 214px;
   justify-content: space-around;
+  list-style-type: none;
 }
 
 .social-icons {
@@ -113,7 +114,7 @@ p {
 .poligon-illustration {
   position: absolute;
   width: 252.89px;
-  left: 122.1px;
+  left: 137.1px;
   top: 210px;
 }
 
