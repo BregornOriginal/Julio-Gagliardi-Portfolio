@@ -9,6 +9,9 @@
   height: 92px;
   flex-direction: row-reverse;
   align-items: center;
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }
 .options-button {
   background-color: antiquewhite;
