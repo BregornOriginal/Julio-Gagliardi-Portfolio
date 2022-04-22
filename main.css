@@ -1,26 +1,29 @@
 * {
   width: 375px;
 }
+
 .ptitle {
-  font-size: 30px;
+  font-size: 20px;
   color: white;
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 10px 12px;
 }
+
 .app-header {
   display: flex;
   flex-wrap: nowrap;
   background-color: #3c3a39;
-  width: 375px;
+  width: 390px;
   height: 92px;
   flex-direction: row-reverse;
   align-items: center;
   position: absolute;
-  left: 0px;
-  top: 0px;
+  top: 0;
+  left: 0;
 }
+
 .options-button {
   background-color: #3c3a39;
   height: 40px;
@@ -31,18 +34,19 @@
   padding: 8px;
   border: none;
 }
+
 #main-section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   position: absolute;
-  width: 375px;
+  width: 390px;
   height: 100%;
-  left: 0px;
+  left: 0;
   top: 92px;
-
   background: #1c1a19;
 }
+
 .flex-content {
   width: 375px;
   background-color: #1c1a19;
@@ -50,80 +54,70 @@
   flex-direction: column;
   align-items: center;
 }
-h2 {
+
+h1 {
   width: 327px;
   height: 124px;
   left: 24px;
   top: 120px;
   color: #ff6b00;
-  font-family: "Crete Round";
-  font-style: normal;
-  font-weight: 400;
   font-size: 56px;
   flex: none;
   flex-grow: 0;
-
   line-height: 64px;
   letter-spacing: 0.37px;
+  font-family: "Crete Round", serif;
 }
+
 h3 {
   color: #fff5e1;
   position: static;
   width: 327px;
   height: 27px;
-  left: 24px;
-  top: 256px;
-
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
+  font-family: "Roboto", sans-serif;
   font-size: 24px;
   line-height: 32px;
-  flex: none;
-  flex-grow: 0;
-  margin: 12px 0px;
+  margin: 12px 0;
 }
-p {
-  color: #ffffff;
-  display: flex;
 
-  position: static;
+p {
+  color: hsl(0, 0%, 100%);
   width: 327px;
   height: 123px;
-  left: 24px;
-  top: 295px;
-  font-family: Poppins;
-  font-size: 16px;
-  font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
-  text-align: left;
 }
 
 .container-icons {
   display: flex;
+  position: absolute;
+  z-index: 1;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   margin: -6px 33px;
   height: 40px;
   width: 214px;
   justify-content: space-around;
+  list-style-type: none;
 }
+
 .social-icons {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
+
 .main-icons {
   width: 25.985201px;
 }
+
 .poligon-illustration {
   position: absolute;
   width: 252.89px;
-  left: 122.1px;
+  left: 137.1px;
   top: 210px;
 }
+
 .menu-button {
   display: flex;
   flex-direction: row;
