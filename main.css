@@ -126,6 +126,9 @@ h3 {
 }
 
 .works-section-h4 hr {
+  size: 1;
+  width: 85%; 
+  color: black;
   margin: 10px 0 85px 0;
 }
 
