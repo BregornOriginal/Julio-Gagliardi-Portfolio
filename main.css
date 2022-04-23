@@ -127,7 +127,7 @@ h3 {
 
 .works-section-h4 hr {
   size: 1;
-  width: 85%; 
+  width: 85%;
   color: black;
   margin: 10px 0 85px 0;
 }
@@ -324,6 +324,7 @@ h4 {
 .about-me-container hr {
   align-self: center;
   border: 1px solid white;
+  width: 85%;
 }
 
 .technologies-about-me {
