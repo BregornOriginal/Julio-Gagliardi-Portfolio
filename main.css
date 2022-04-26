@@ -10,6 +10,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style:none;
+}
+
 .ptitle {
   font-size: 20px;
   color: white;
