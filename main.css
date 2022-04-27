@@ -10,6 +10,14 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}
+
 .ptitle {
   font-size: 20px;
   color: white;
@@ -79,6 +87,7 @@ a {
   z-index: 1;
   align-items: center;
   list-style-type: none;
+  padding-left: 35px;
 }
 
 .container-icons li {
@@ -199,7 +208,17 @@ a {
 }
 
 .button-see-project-multi-post-stories:hover {
-  background-color: green;
+  background-color: #fff5e1;
+  color: #ff6b00;
+}
+
+.button-see-project-multi-post-stories:active {
+  background-color: #e05304;
+}
+
+.button-see-project-multi-post-stories:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
 }
 
 /* Here start section of works number two */
@@ -263,7 +282,17 @@ a {
 }
 
 .button-see-project-works-two:hover {
-  background-color: green;
+  background-color: #fff5e1;
+  color: #ff6b00;
+}
+
+.button-see-project-works-two:active {
+  background-color: #e05304;
+}
+
+.button-see-project-works-two:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
 }
 
 /* On forward continue whit the last section "About me" */
@@ -306,7 +335,17 @@ a {
 }
 
 #button-resume:hover {
-  background-color: green;
+  background-color: #fff5e1;
+  color: #ff6b00;
+}
+
+.button-resume:active {
+  background-color: #e05304;
+}
+
+.button-resume:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
 }
 
 .about-me-image-container {
@@ -395,4 +434,112 @@ a {
   line-height: 43px;
   text-align: center;
   list-style-type: none;
+}
+
+footer {
+  margin: 120px 0 0 0;
+}
+
+.contact {
+  padding: 0 24px;
+}
+
+.description-contact {
+  font-family: Inter, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0;
+  text-align: center;
+  margin: 0 0 73px 0;
+  color: #172b4d;
+}
+
+.contact-inputs {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#full-name {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-width: 1px;
+}
+
+#email-address {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-width: 1px;
+  margin-top: 39px;
+}
+
+#message {
+  border: none;
+  background-color: #fbf8f7;
+  margin-top: 24px;
+  width: 327px;
+  height: 114px;
+}
+
+.container-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 24px 0 124px 0;
+}
+
+.button-submit {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  height: 48px;
+  width: 131px;
+  background-color: #ff6b00;
+  color: white;
+  border: none;
+}
+
+.button-submit:hover {
+  background-color: #fff5e1;
+  color: #ff6b00;
+}
+
+.button-submit:active {
+  background-color: #e05304;
+  color: #e5e5e5;
+}
+
+.button-submit:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+}
+
+.top-line-social-icons {
+  width: 100%;
+  background: #dfe1e6;
+  height: 1px;
+  margin: 0;
+}
+
+.container-icons-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.container-line-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 23px 0 8px 0;
+}
+
+.bottom-line-social-icons {
+  height: 5px;
+  width: 134px;
+  border-radius: 10px;
+  background: #0d151e;
 }
