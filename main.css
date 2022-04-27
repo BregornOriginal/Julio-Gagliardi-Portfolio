@@ -467,6 +467,7 @@ footer {
   border-right: none;
   border-left: none;
   border-width: 1px;
+  width: calc(100vw - 53px);
 }
 
 #email-address {
@@ -475,6 +476,7 @@ footer {
   border-left: none;
   border-width: 1px;
   margin-top: 39px;
+  width: calc(100vw - 53px);
 }
 
 #message {
