@@ -217,8 +217,8 @@ ul {
 }
 
 .button-see-project-multi-post-stories:disabled {
-  background-color: #F4F1F0;
-  color: #5B5957;
+  background-color: #f4f1f0;
+  color: #5b5957;
 }
 
 /* Here start section of works number two */
@@ -291,10 +291,9 @@ ul {
 }
 
 .button-see-project-works-two:disabled {
-  background-color: #F4F1F0;
-  color: #5B5957;
+  background-color: #f4f1f0;
+  color: #5b5957;
 }
-
 
 /* On forward continue whit the last section "About me" */
 
@@ -345,10 +344,9 @@ ul {
 }
 
 .button-resume:disabled {
-  background-color: #F4F1F0;
-  color: #5B5957;
+  background-color: #f4f1f0;
+  color: #5b5957;
 }
-
 
 .about-me-image-container {
   display: flex;
@@ -515,8 +513,8 @@ footer {
 }
 
 .button-submit:disabled {
-  background-color: #F4F1F0;
-  color: #5B5957;
+  background-color: #f4f1f0;
+  color: #5b5957;
 }
 
 .top-line-social-icons {
