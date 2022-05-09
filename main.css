@@ -31,7 +31,6 @@ ul {
   flex-wrap: nowrap;
   background-color: #3c3a39;
   width: 100%;
-  height: 50px;
   padding: 10px 12px;
   justify-content: space-between;
   align-items: center;
@@ -115,6 +114,23 @@ ul {
 .menu-button {
   height: 40px;
   width: 40px;
+}
+
+.menu-display-off {
+  display: none;
+}
+
+.menu-display-on {
+  display: flex;
+}
+
+#close-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-mobile-menu {
+  width: 100%;
 }
 
 /* Here start section of works number one */
