@@ -36,6 +36,20 @@ ul {
   align-items: center;
 }
 
+.menu-display-off {
+  display: none;
+}
+
+.nav-mobile-menu {
+  width: 100%;
+}
+
+.nav-mobile-menu .close-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
 .options-button {
   background-color: #3c3a39;
   border: none;
@@ -114,23 +128,6 @@ ul {
 .menu-button {
   height: 40px;
   width: 40px;
-}
-
-.menu-display-off {
-  display: none;
-}
-
-.menu-display-on {
-  display: flex;
-}
-
-#close-button {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.nav-mobile-menu {
-  width: 100%;
 }
 
 /* Here start section of works number one */
