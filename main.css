@@ -64,9 +64,13 @@ ul {
   padding-bottom: 10px;
   padding-left: 20px;
   margin-bottom: 20px;
-  color: #FFF5E1;
-
 }
+
+.nav-mobile-menu ul li a {
+  text-decoration: none;
+  color: #FFF5E1;
+}
+
 
 .nav-mobile-menu .close-btn {
 	display: flex;

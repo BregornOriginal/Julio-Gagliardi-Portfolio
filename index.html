@@ -15,7 +15,7 @@
 	</head>
 	<body>
 		<header class="app-header">
-			<a href="#" class="ptitle menu-display-off">Julio's Porfolio</a>
+			<a id="logo" href="#" class="ptitle">Julio's Porfolio</a>
 			<ul class="desktop-nav-icons">
 				<li><a class="nav-text" href="#"> Portfolio</a></li>
 				<li><a class="nav-text" href="#"> About</a></li>
@@ -31,7 +31,7 @@
 				</li>
 			</ul>
 			<nav>
-				<button id="hamburger-button" type="button" class="options-button menu-display-off">
+				<button id="hamburger-button" type="button" class="options-button">
 					<img
 						class="menu-button"
 						src="./Icons/Enabled.png"
@@ -40,7 +40,7 @@
 				</button>
 				<!-- nav-icons for desktop version -->
 			</nav>
-			<nav class="nav-mobile-menu">
+			<nav id="mobile-menu-id" class="nav-mobile-menu menu-display-off">
         <div id="close-button"class="close-btn">
 					<img
           id="close-button"
@@ -49,9 +49,9 @@
         />
 				</div>
 				<ul>
-					<li id="porfolio"> <a href="">Portfolio</a></li>
-					<li id="about"><a href="">About</a></li>
-					<li id="contact"><a href="">Contact</a></li>
+					<li id="porfolio"> <a href="#work-section">Portfolio</a></li>
+					<li id="about"><a href="#about-section">About</a></li>
+					<li id="contact"><a href="#contact-section">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -122,7 +122,7 @@
 			/>
 		</section>
 		<div class="works-section-h4">
-			<h3 class="title-works">My Recent Works</h3>
+			<h3 id="work-section" class="title-works">My Recent Works</h3>
 			<hr />
 		</div>
 		<section class="works-grid-container">
@@ -396,7 +396,7 @@
     the positioning of the containers -->
 			<div class="container-top-section-about-me-desktop">
 				<div class="container-middle-section-about-me-desktop">
-					<div class="about-me-title">
+					<div id="about-section" class="about-me-title">
 						<p>About me</p>
 					</div>
 					<div class="about-me-description">
@@ -488,7 +488,7 @@
 		<footer>
 			<section class="contact">
 				<form action="https://formspree.io/f/mlezobkj" method="POST">
-					<div class="container-contact">
+					<div id="contact-section" class="container-contact">
 						<p class="description-contact">
 							I'm always interested in hearing about new projects, so if you'd
 							like to chat please get in touch.
@@ -576,6 +576,7 @@
 				<hr class="bottom-line-social-icons" />
 			</div>
 		</footer>
+		<script src="script.js"></script>
 		<script src="./js/bootstrap.bundle.min.js"></script>
 	</body>
 </html>
