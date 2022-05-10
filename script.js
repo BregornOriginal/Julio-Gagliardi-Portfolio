@@ -9,30 +9,30 @@ const $contact = document.getElementById('contact');
 
 // Functions
 function hideMobileMenu() {
-	$hamburgerButton.classList.remove('menu-display-off');
-	$logo.classList.remove('menu-display-off');
-	$menuNav.classList.add('menu-display-off');
+  $hamburgerButton.classList.remove('menu-display-off');
+  $logo.classList.remove('menu-display-off');
+  $menuNav.classList.add('menu-display-off');
 }
 
 // Dom Manipulation
 $hamburgerButton.addEventListener('click', () => {
-	$hamburgerButton.classList.add('menu-display-off');
-	$logo.classList.add('menu-display-off');
-	$menuNav.classList.remove('menu-display-off');
+  $hamburgerButton.classList.add('menu-display-off');
+  $logo.classList.add('menu-display-off');
+  $menuNav.classList.remove('menu-display-off');
 });
 
 $closeButton.addEventListener('click', () => {
-	hideMobileMenu();
+  hideMobileMenu();
 });
 
 $portfolio.addEventListener('click', () => {
-	hideMobileMenu();
+  hideMobileMenu();
 });
 
 $about.addEventListener('click', () => {
-	hideMobileMenu();
+  hideMobileMenu();
 });
 
 $contact.addEventListener('click', () => {
-	hideMobileMenu();
+  hideMobileMenu();
 });
