@@ -637,11 +637,11 @@ footer {
   .poligon-illustration,
   .description-recent-works-two,
   .title-recent-works-two,
-  .button-see-project-works-two,
   .technologies-container-works-two,
   #about-me-image,
   .button-submit,
-  .bottom-line-social-icons {
+  .bottom-line-social-icons,
+  .button-see-project-works-two {
     display: none;
   }
 
@@ -850,15 +850,42 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
-    padding: 250px 0 0 0;
+    padding: 203px 0 0 0;
   }
 
+  .works-section-two-container-data-dashboard .background-container:hover {
+    background-image: url(images/image-background-works-main.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 178px 0;
+  }
+
+  .background-container:hover .information-container-works-two, .technologies-container-works-two-desktop {
+    display: none;
+  }
+
+  .technologies-container-works-portfolio-two-desktop:hover {
+    display: none;
+  }
+
+  .button-container-desktop {
+    display: none;
+  }
+
+  .works-section-two-container-data-dashboard:hover .button-container-desktop {
+    display: block;
+  }
+
+/* .description-recent-works-two-desktop,
+.technologies-container-works-two-desktop { */
+  
   .works-section-two-container-website-portfolio .background-container {
     background-image: url(images/image-background-portfolio.svg);
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
-    padding: 287px 0 0 0;
+    padding: 240px 0 0 0;
   }
 
   .works-section-two-container-profesional-art .background-container {
@@ -866,7 +893,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
-    padding: 250px 0 0 0;
+    padding: 203px 0 0 0;
   }
 
   .title-recent-works-two-desktop {
@@ -875,7 +902,6 @@ footer {
     font-weight: 400;
     font-size: 32px;
     line-height: 44px;
-    width: 337px;
     height: 81px;
     margin: 0 16px;
   }
@@ -904,6 +930,14 @@ footer {
     border: none;
     align-items: center;
   }
+    .button-see-project-works-two-desktop:active {
+      background-color: #e05304;
+    }
+    
+    .button-see-project-works-two-desktop:disabled {
+      background-color: #f4f1f0;
+      color: #5b5957;
+    }
 
   .technologies-container-works-two-desktop {
     display: flex;
@@ -925,17 +959,19 @@ footer {
   .title-recent-works-portfolio-two-desktop {
     display: block;
     font-family: 'Crete Round', sans-serif;
-    width: 337px;
     font-weight: 400;
     font-size: 32px;
     line-height: 44px;
     margin: 0 0 0 16px;
   }
 
+  .title-recent-works-portfolio-two-desktop:hover {
+    display: none;
+  }
+
   .description-recent-works-portfolio-two-desktop {
     display: block;
     font-family: 'Inter', sans-serif;
-    width: 337px;
     height: 72px;
     font-weight: 400;
     font-size: 17px;
@@ -966,7 +1002,6 @@ footer {
     font-weight: 400;
     font-size: 32px;
     line-height: 44px;
-    width: 337px;
     height: 81px;
     margin: 0 16px;
   }
