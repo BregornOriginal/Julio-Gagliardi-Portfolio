@@ -734,6 +734,17 @@ footer {
     display: unset;
   }
 
+  #main-section {
+    /* position: relative; */
+    width: 100%;
+    height: calc(100vh - 50px);
+    background: #1c1a19;
+    background-image: url(./Icons/Desktop-Illustration-header.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 10%;
+    padding: 105px 16px 22px 16px;
+  }
+
   .works-section-h4 {
     display: flex;
     flex-direction: row;
