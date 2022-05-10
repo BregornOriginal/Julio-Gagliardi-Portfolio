@@ -96,7 +96,7 @@ ul {
   background-image: url(./Icons/Illustration.svg);
   background-repeat: no-repeat;
   background-position: 100% 100%;
-  padding: 105px 16px 22px 16px;
+  /* padding: 105px 16px 22px 16px; */
 }
 
 .flex-content {
@@ -742,7 +742,7 @@ footer {
     background-image: url(./Icons/Desktop-Illustration-header.svg);
     background-repeat: no-repeat;
     background-position: 100% 10%;
-    padding: 105px 16px 22px 16px;
+    /* padding: 105px 16px 22px 16px; */
   }
 
   .works-section-h4 {
