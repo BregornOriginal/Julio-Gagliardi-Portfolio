@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Grape+Nuts&family=Roboto:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Grape+Nuts&family=Inter&family=Roboto:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Grape+Nuts&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Grape+Nuts&family=Inter&family=Roboto:wght@500&display=swap');
 
 * {
   margin: 0;
@@ -31,10 +31,56 @@ ul {
   flex-wrap: nowrap;
   background-color: #3c3a39;
   width: 100%;
-  height: 50px;
   padding: 10px 12px;
   justify-content: space-between;
   align-items: center;
+}
+
+.menu-display-off {
+  display: none;
+}
+
+.nav-mobile-menu {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  background-color: #3c3a39;
+  top: 0;
+  left: 0;
+}
+
+.nav-mobile-menu ul {
+  padding: 0 20px;
+}
+
+.container-icons li {
+  padding: 22px 22px 0 0;
+}
+
+.nav-mobile-menu ul li {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  border-bottom: solid 1px white;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.nav-mobile-menu ul li a {
+  text-decoration: none;
+  color: #fff5e1;
+}
+
+.nav-mobile-menu .close-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#close-button {
+  padding: 30px;
 }
 
 .options-button {
@@ -43,10 +89,14 @@ ul {
 }
 
 #main-section {
-  position: relative;
+  /* position: relative; */
   width: 100%;
   height: calc(100vh - 50px);
   background: #1c1a19;
+  background-image: url(./Icons/Illustration.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  padding: 105px 16px 22px 16px;
 }
 
 .flex-content {
@@ -60,13 +110,13 @@ ul {
   font-size: 56px;
   line-height: 64px;
   letter-spacing: 0.37px;
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', serif;
 }
 
 .my-carrer {
   color: #fff5e1;
   position: static;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 24px;
   line-height: 32px;
   margin: 12px 0;
@@ -84,14 +134,11 @@ ul {
 
 .container-icons {
   display: flex;
-  z-index: 1;
+
+  /* z-index: 1; */
   align-items: center;
   list-style-type: none;
   padding-left: 35px;
-}
-
-.container-icons li {
-  padding: 22px 22px 0 0;
 }
 
 .social-icons {
@@ -600,7 +647,7 @@ footer {
 
   .nav-text {
     color: white;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
@@ -627,7 +674,7 @@ footer {
     display: initial;
     flex-wrap: initial;
     padding: 0;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 20px;
     margin: 25px 0 0 118px;
@@ -642,7 +689,7 @@ footer {
   .my-name {
     width: 566px;
     height: 160px;
-    font-family: "Crete Round", sans-serif;
+    font-family: 'Crete Round', sans-serif;
     font-weight: 400;
     font-size: 72px;
     line-height: 82px;
@@ -650,7 +697,7 @@ footer {
 
   .my-carrer {
     margin: 24px 0;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 32px;
     line-height: 44px;
@@ -658,7 +705,7 @@ footer {
   }
 
   .presentation-container p {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
@@ -695,7 +742,7 @@ footer {
   }
 
   .title-works {
-    font-family: "Crete Round", sans-serif;
+    font-family: 'Crete Round', sans-serif;
     font-weight: 400;
     font-size: 40px;
     line-height: 52px;
@@ -736,7 +783,7 @@ footer {
   }
 
   .title-recent-works-one {
-    font-family: "Crete Round", sans-serif;
+    font-family: 'Crete Round', sans-serif;
     font-weight: 400;
     font-size: 40px;
     line-height: 52px;
@@ -744,7 +791,7 @@ footer {
   }
 
   .description-recent-works-one {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
@@ -813,7 +860,7 @@ footer {
 
   .title-recent-works-two-desktop {
     display: block;
-    font-family: "Crete Round", sans-serif;
+    font-family: 'Crete Round', sans-serif;
     font-weight: 400;
     font-size: 32px;
     line-height: 44px;
@@ -824,7 +871,7 @@ footer {
 
   .description-recent-works-two-desktop {
     display: block;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 17px;
     line-height: 24px;
@@ -866,7 +913,7 @@ footer {
 
   .title-recent-works-portfolio-two-desktop {
     display: block;
-    font-family: "Crete Round", sans-serif;
+    font-family: 'Crete Round', sans-serif;
     width: 337px;
     font-weight: 400;
     font-size: 32px;
@@ -876,7 +923,7 @@ footer {
 
   .description-recent-works-portfolio-two-desktop {
     display: block;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     width: 337px;
     height: 72px;
     font-weight: 400;
@@ -904,7 +951,7 @@ footer {
 
   .title-recent-works-art-two-desktop {
     display: block;
-    font-family: "Crete Round", sans-serif;
+    font-family: 'Crete Round', sans-serif;
     font-weight: 400;
     font-size: 32px;
     line-height: 44px;
@@ -915,7 +962,7 @@ footer {
 
   .description-recent-works-art-two-desktop {
     display: block;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 17px;
     line-height: 24px;
@@ -971,14 +1018,14 @@ footer {
   }
 
   .language-title {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
   }
 
   .languages-list {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 22px;
     line-height: 43px;
@@ -990,7 +1037,7 @@ footer {
   }
 
   .frameworks-title {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
@@ -1004,14 +1051,14 @@ footer {
 
   .frameworks-list {
     text-align: unset;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 22px;
     line-height: 43px;
   }
 
   .skills-title {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
@@ -1020,14 +1067,14 @@ footer {
 
   .skills-list {
     text-align: unset;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 22px;
     line-height: 43px;
   }
 
   .description-contact {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
