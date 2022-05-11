@@ -6,6 +6,8 @@
   box-sizing: border-box;
 }
 
+/* html, body {margin: 0; height: 100%; overflow: hidden} */
+
 a {
   text-decoration: none;
   color: white;
@@ -742,10 +744,6 @@ footer {
     width: 80vw;
     border: 1px solid #212121;
     margin: 0;
-  }
-
-  .works-grid-container {
-    padding: 0 140px 120px;
   }
 
   .works-section-one-container {
