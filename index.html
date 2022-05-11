@@ -109,102 +109,8 @@
 			<h3 id="work-section" class="title-works">My Recent Works</h3>
 			<hr />
 		</div>
-		<section id="works-container" class="works-grid-container">
-
-			<!-- <section class="grid-section">
-				<article class="secondary-card grid-1">
-					<h4>Data Dashboard Healthcare</h4>
-					<p>
-						A daily selection of privately personalized reads; no accounts or
-						sign-ups required. has been the industry's standard
-					</p>
-					<ul>
-						<li>HTML</li>
-						<li>Bootstrap</li>
-						<li>Ruby</li>
-					</ul>
-					<div class="full-width-btn">
-						<a href="#">See Project</a>
-					</div>
-				</article>
-
-				<article class="secondary-card grid-2">
-					<h4>Data Dashboard Healthcare</h4>
-					<p>
-						A daily selection of privately personalized reads; no accounts or
-						sign-ups required. has been the industry's standard
-					</p>
-					<ul>
-						<li>HTML</li>
-						<li>Bootstrap</li>
-						<li>Ruby</li>
-					</ul>
-					<div class="full-width-btn">
-						<a href="#">See Project</a>
-					</div>
-				</article>
-				<article class="secondary-card grid-3">
-					<h4>Data Dashboard Healthcare</h4>
-					<p>
-						A daily selection of privately personalized reads; no accounts or
-						sign-ups required. has been the industry's standard
-					</p>
-					<ul>
-						<li>HTML</li>
-						<li>Bootstrap</li>
-						<li>Ruby</li>
-					</ul>
-					<div class="full-width-btn">
-						<a href="#">See Project</a>
-					</div>
-				</article>
-				<article class="secondary-card grid-4">
-					<h4>Data Dashboard Healthcare</h4>
-					<p>
-						A daily selection of privately personalized reads; no accounts or
-						sign-ups required. has been the industry's standard
-					</p>
-					<ul>
-						<li>HTML</li>
-						<li>Bootstrap</li>
-						<li>Ruby</li>
-					</ul>
-					<div class="full-width-btn">
-						<a href="#">See Project</a>
-					</div>
-				</article>
-				<article class="secondary-card grid-5">
-					<h4>Data Dashboard Healthcare</h4>
-					<p>
-						A daily selection of privately personalized reads; no accounts or
-						sign-ups required. has been the industry's standard
-					</p>
-					<ul>
-						<li>HTML</li>
-						<li>Bootstrap</li>
-						<li>Ruby</li>
-					</ul>
-					<div class="full-width-btn">
-						<a href="#">See Project</a>
-					</div>
-				</article>
-				<article class="secondary-card grid-6">
-					<h4>Data Dashboard Healthcare</h4>
-					<p>
-						A daily selection of privately personalized reads; no accounts or
-						sign-ups required. has been the industry's standard
-					</p>
-					<ul>
-						<li>HTML</li>
-						<li>Bootstrap</li>
-						<li>Ruby</li>
-					</ul>
-					<div class="full-width-btn">
-						<a href="#">See Project</a>
-					</div>
-				</article>
-			</section> -->
-		</section>
+		<!-- The next container is for the cards created dynamically in Javascript -->
+		<section id="works-container" class="works-grid-container"></section>
 		<section class="about-me-container">
 			<!-- there is two new container for desktop version, to make more easy
     the positioning of the containers -->
@@ -390,11 +296,11 @@
 				<hr class="bottom-line-social-icons" />
 			</div>
 		</footer>
-		<!-- <section>
-			<article>
+		<section>
+			<article class="popup-section">
 				<div class="title-menu">
 					<p>Multi Post Stories</p>
-					<button>X</button>
+					<img alt="X button" src="./Icons/Icon-Cancel.svg" />
 				</div>
 				<ul>
 					<li>HTML</li>
@@ -402,7 +308,7 @@
 					<li>Ruby on rails</li>
 				</ul>
 				<div class="project-resume">
-					<img
+					<img id="resume-image"
 						src="./images/Detail-popup-image.svg"
 						alt="image whit a number ten and background pink"
 					/>
@@ -414,11 +320,13 @@
 						only five centuries, but also the leap into electronic typesetting,
 						remaining essent
 					</p>
-					<button>See Live</button>
-					<button>See Source</button>
+					<div class="buttons-resume">
+						<button>See Live <img alt="export icon" src="Icons/Icon-Export.svg"></button>
+						<button>See Source<img alt="git hub icon" src="Icons/Icon-GitHub.svg"></button>
+					</div>
 				</div>
 			</article>
-		</section> -->
+		</section>
 		<script src="script.js"></script>
 	</body>
 </html>
