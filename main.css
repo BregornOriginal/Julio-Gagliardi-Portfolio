@@ -6,8 +6,6 @@
 	box-sizing: border-box;
 }
 
-/* html, body {margin: 0; height: 100%; overflow: hidden} */
-
 a {
 	text-decoration: none;
 	color: white;
@@ -19,6 +17,23 @@ li {
 
 ul {
 	padding: 0;
+}
+
+body {
+	position: relative;
+}
+
+/* blur is for header and main for popup */
+.blur {
+	filter: blur(0.8rem);
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* disable-scroll for body for popup*/
+.disable-scroll {
+	margin: 0;
+	height: 100%;
+	overflow: hidden;
 }
 
 .ptitle {
@@ -974,6 +989,8 @@ footer {
 
 .popup-section {
 	padding: 16px;
+	position: absolute;
+	top: 0;
 }
 .popup-section ul {
 	display: flex;
@@ -1037,6 +1054,20 @@ footer {
 	height: 48px;
 	color: white;
 	background-color: rgb(255 107 0);
+}
+
+.buttons-resume button:hover {
+	background-color: #fff5e1;
+	color: #ff6b00;
+}
+
+.buttons-resume button:active {
+	background-color: #e05304;
+}
+
+.buttons-resume button:disabled {
+	background-color: #f4f1f0;
+	color: #5b5957;
 }
 
 @media only screen and (min-width: 768px) {
