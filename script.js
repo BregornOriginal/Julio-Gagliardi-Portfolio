@@ -105,53 +105,55 @@ const $projectList = [{
 }];
 
 const $worksContainer = document.getElementById('works-container');
-const $article = document.createElement('article');
-$article.classList.add('works-section-one-container');
 
+const $gridSection = document.createElement('section');
+$gridSection.classList.add('grid-section');
 
-$article.innerHTML = `<div class="image-recent-works-container">
+for (let i = 0; i < $projectList.length; i += 1) {
+  let count = i;
+  const $article = document.createElement('article');
+  if (i === 0) {
+    $article.classList.add('works-section-one-container');
+    $article.innerHTML = `<div class="image-recent-works-container">
 <img
   id="image-recent-works"
-  src="${$projectList[0].featureImage}"
+  src="${$projectList[i].featureImage}"
   alt="A woman doing Yoga"
 />
 </div>
 <div class="information-and-icons-container">
-<h4 class="title-recent-works-one">${$projectList[0].title}</h4>
-<p class="description-recent-works-one">${$projectList[0].description}</p>
+<h4 class="title-recent-works-one">${$projectList[i].title}</h4>
+<p class="description-recent-works-one">${$projectList[i].description}</p>
 <div>
   <ul class="technologies-container-works-one">
-    <li class="technologies-works-one">${$projectList[0].technologies.firstTechnologie}</li>
-    <li class="technologies-works-one">${$projectList[0].technologies.secondTechnologie}</li>
-    <li class="technologies-works-one">${$projectList[0].technologies.thirdTechnologie}</li>
-    <li class="technologies-works-one">${$projectList[0].technologies.fourThechnologie}</li>
+    <li class="technologies-works-one">${$projectList[i].technologies.firstTechnologie}</li>
+    <li class="technologies-works-one">${$projectList[i].technologies.secondTechnologie}</li>
+    <li class="technologies-works-one">${$projectList[i].technologies.thirdTechnologie}</li>
+    <li class="technologies-works-one">${$projectList[i].technologies.fourThechnologie}</li>
   </ul>
   <button type="button" class="button-see-project-multi-post-stories">
     See Project
   </button>
 </div>
 </div>`;
-$worksContainer.appendChild($article);
-
-const $gridSection = document.createElement('section');
-$gridSection.classList.add('grid-section');
-
-const $articleCard = document.createElement('article');
-$articleCard.classList.add('secondary-card', 'grid-1');
-
-$articleCard.innerHTML = `
-<h4>${$projectList[1].title}</h4>
+    $worksContainer.appendChild($article);
+  } else {
+    $article.classList.add('secondary-card', `grid-${[i]}`);
+    $article.innerHTML = `
+<h4>${$projectList[i].title}</h4>
 <p>
- ${$projectList[1].description}
+ ${$projectList[i].description}
 </p>
 <ul>
-  <li>${$projectList[1].technologies.firstTechnologie}</li>
-  <li>${$projectList[1].technologies.secondTechnologie}</li>
-  <li>${$projectList[1].technologies.thirdTechnologie}</li>
+  <li>${$projectList[i].technologies.firstTechnologie}</li>
+  <li>${$projectList[i].technologies.secondTechnologie}</li>
+  <li>${$projectList[i].technologies.thirdTechnologie}</li>
 </ul>
 <div class="full-width-btn">
   <a href="#">See Project</a>
 </div>`;
+    $gridSection.appendChild($article);
+  }
+};
 
-$gridSection.appendChild($articleCard);
 $worksContainer.appendChild($gridSection);
