@@ -133,25 +133,27 @@ $article.innerHTML = `<div class="image-recent-works-container">
 </div>`;
 $worksContainer.appendChild($article);
 
-const $gridSection = document.createElement('section');
-$gridSection.classList.add('grid-section');
+const $sectionGrid = document.createElement('section');
+$sectionGrid.classList.add('grid-section');
 
-const $articleCard = document.createElement('article');
-$articleCard.classList.add('secondary-card', 'grid-1');
+const $cardArticle = document.createElement('article');
+$cardArticle.classList.add('secondary-card', 'grid-4');
 
-$articleCard.innerHTML = `
-<h4>${$projectList[1].title}</h4>
-<p>
- ${$projectList[1].description}
-</p>
-<ul>
-  <li>${$projectList[1].technologies.firstTechnologie}</li>
-  <li>${$projectList[1].technologies.secondTechnologie}</li>
-  <li>${$projectList[1].technologies.thirdTechnologie}</li>
-</ul>
-<div class="full-width-btn">
-  <a href="#">See Project</a>
-</div>`;
+$cardArticle.innerHTML = `
+<h4>Data Dashboard Healthcare</h4>
+					<p>
+						A daily selection of privately personalized reads; no accounts or
+						sign-ups required. has been the industry's standard
+					</p>
+					<ul>
+						<li>HTML</li>
+						<li>Bootstrap</li>
+						<li>Ruby</li>
+					</ul>
+					<div class="full-width-btn">
+						<a href="#">See Project</a>
+					</div>`;
 
-$gridSection.appendChild($articleCard);
-$worksContainer.appendChild($gridSection);
+          $sectionGrid.appendChild($cardArticle);
+          $worksContainer.appendChild($sectionGrid);
+
