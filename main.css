@@ -971,3 +971,70 @@ footer {
 		margin: 24px 0 0 0;
 	}
 }
+
+.popup-section ul {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.popup-section ul li {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 16px;
+	color: rgb(60, 58, 57);
+	border: solid 1px black;
+	padding: 10px 12px;
+	margin: 16px;
+}
+
+.title-menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 20px 68px 16px 20px;
+}
+
+.title-menu p {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 44px;
+}
+
+#resume-image {
+	display: flex;
+	flex-direction: column;
+	margin: 0px 16px 24px 16px;
+}
+
+.project-resume {
+	display: flex;
+	flex-direction: column;
+}
+
+.project-resume p {
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	margin: 0 16px 16px 16px;
+}
+
+.buttons-resume {
+	display: flex;
+	justify-content: space-around;
+	padding: 12px;
+}
+
+.buttons-resume button {
+	border: none;
+	font-family: 'Inter', sans-serif;
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 24px;
+	width: 134px;
+	height: 48px;
+	color: white;
+	background-color: rgb(255 107 0);
+}
