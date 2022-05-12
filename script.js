@@ -48,7 +48,7 @@ const $projectList = [{
     secondTechnologie: 'HTML',
     thirdTechnologie: 'Bootstrap',
     fourThechnologie: 'Ruby',
-    
+
   },
   liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio-/',
   sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio-',
@@ -171,7 +171,7 @@ for (let i = 0; i < $projectList.length; i += 1) {
 `;
     $gridSection.appendChild($article);
   }
-};
+}
 
 $worksContainer.appendChild($gridSection);
 
@@ -181,21 +181,20 @@ const $body = document.body;
 const $header = document.getElementById('header-popup');
 const $main = document.getElementById('main-popup');
 
-
 for (let i = 0; i < $buttonsPopup.length; i += 1) {
-$buttonsPopup[i].addEventListener('click', () => {
-  $popupSection.classList.remove('no-visible')
-  $body.classList.add('disable-scroll');
-  $header.classList.add('blur');
-  $main.classList.add('blur');
-})
-};
+  $buttonsPopup[i].addEventListener('click', () => {
+    $popupSection.classList.remove('no-visible');
+    $body.classList.add('disable-scroll');
+    $header.classList.add('blur');
+    $main.classList.add('blur');
+  });
+}
 
 const $closeBtnPopup = document.getElementById('popUp-close-btn');
 
-$closeBtnPopup.addEventListener('click', () =>{
-  $popupSection.classList.add('no-visible')
+$closeBtnPopup.addEventListener('click', () => {
+  $popupSection.classList.add('no-visible');
   $body.classList.remove('disable-scroll');
   $header.classList.remove('blur');
   $main.classList.remove('blur');
-})
+});
