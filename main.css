@@ -29,12 +29,12 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* disable-scroll for body for popup */
+/* disable-scroll for body for popup
 .disable-scroll {
   margin: 0;
   height: 100%;
   overflow: hidden;
-}
+} */
 
 .visible {
   display: block;
@@ -1105,6 +1105,11 @@ footer {
 
   .title-menu {
     margin: 0 0 20px 0;
+  }
+
+  .text-container ul {
+    display: flex;
+    justify-content: flex-start;
   }
 
   .popup-section .title-menu ul {

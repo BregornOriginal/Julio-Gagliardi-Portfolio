@@ -177,14 +177,12 @@ $worksContainer.appendChild($gridSection);
 
 const $buttonsPopup = document.querySelectorAll('.popup-button');
 const $popupSection = document.querySelector('.popup-section');
-const $body = document.body;
 const $header = document.getElementById('header-popup');
 const $main = document.getElementById('main-popup');
 
 for (let i = 0; i < $buttonsPopup.length; i += 1) {
   $buttonsPopup[i].addEventListener('click', () => {
     $popupSection.classList.remove('no-visible');
-    $body.classList.add('disable-scroll');
     $header.classList.add('blur');
     $main.classList.add('blur');
   });
@@ -194,7 +192,6 @@ const $closeBtnPopup = document.getElementById('popUp-close-btn');
 
 $closeBtnPopup.addEventListener('click', () => {
   $popupSection.classList.add('no-visible');
-  $body.classList.remove('disable-scroll');
   $header.classList.remove('blur');
   $main.classList.remove('blur');
 });
