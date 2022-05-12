@@ -5,16 +5,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<title>Julio Gagliardi Porfolio</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link
-			rel="stylesheet"
-			type="text/css"
-			media="screen"
-			href="./css/bootstrap.min.css"
-		/>
 		<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 	</head>
 	<body>
-		<header class="app-header">
+		<header class="app-header" id="header-popup">
 			<a id="logo" href="#" class="ptitle">Julio's Porfolio</a>
 			<ul class="desktop-nav-icons">
 				<li><a class="nav-text" href="#"> Portfolio</a></li>
@@ -51,6 +45,7 @@
 				</ul>
 			</nav>
 		</header>
+		<main id="main-popup">
 		<section id="main-section">
 			<div class="flex-content">
 				<div class="presentation-container">
@@ -115,129 +110,8 @@
 			<h3 id="work-section" class="title-works">My Recent Works</h3>
 			<hr />
 		</div>
-		<section class="works-grid-container">
-			<article class="works-section-one-container">
-				<div class="image-recent-works-container">
-					<img
-						id="image-recent-works"
-						src="./images/image-section-one.svg"
-						alt="A woman doing Yoga"
-					/>
-				</div>
-				<div class="information-and-icons-container">
-					<h4 class="title-recent-works-one">Multi-Post Stories</h4>
-					<p class="description-recent-works-one">
-						A daily selection of privately personalized reads; no accounts or
-						sign-ups required. has been the industry's standard dummy text ever
-						since the 1500s, when an unknown printer took a standard dummy text.
-					</p>
-					<div>
-						<ul class="technologies-container-works-one">
-							<li class="technologies-works-one">CSS</li>
-							<li class="technologies-works-one">HTML</li>
-							<li class="technologies-works-one">Bootstrap</li>
-							<li class="technologies-works-one">Ruby</li>
-						</ul>
-						<button type="button" class="button-see-project-multi-post-stories">
-							See Project
-						</button>
-					</div>
-				</div>
-			</article>
-
-			<section class="grid-section">
-				<article class="secondary-card grid-1">
-					<h4>Data Dashboard Healthcare</h4>
-					<p>
-						A daily selection of privately personalized reads; no accounts or
-						sign-ups required. has been the industry's standard
-					</p>
-					<ul>
-						<li>HTML</li>
-						<li>Bootstrap</li>
-						<li>Ruby</li>
-					</ul>
-					<div class="full-width-btn" >
-						<a href="#">See Project</a>
-					</div>
-				</article>
-				<article class="secondary-card grid-2">
-					<h4>Data Dashboard Healthcare</h4>
-					<p>
-						A daily selection of privately personalized reads; no accounts or
-						sign-ups required. has been the industry's standard
-					</p>
-					<ul>
-						<li>HTML</li>
-						<li>Bootstrap</li>
-						<li>Ruby</li>
-					</ul>
-					<div class="full-width-btn">
-						<a href="#">See Project</a>
-					</div>
-				</article>
-				<article class="secondary-card grid-3">
-					<h4>Data Dashboard Healthcare</h4>
-					<p>
-						A daily selection of privately personalized reads; no accounts or
-						sign-ups required. has been the industry's standard
-					</p>
-					<ul>
-						<li>HTML</li>
-						<li>Bootstrap</li>
-						<li>Ruby</li>
-					</ul>
-					<div class="full-width-btn">
-						<a href="#">See Project</a>
-					</div>
-				</article>
-				<article class="secondary-card grid-4">
-					<h4>Data Dashboard Healthcare</h4>
-					<p>
-						A daily selection of privately personalized reads; no accounts or
-						sign-ups required. has been the industry's standard
-					</p>
-					<ul>
-						<li>HTML</li>
-						<li>Bootstrap</li>
-						<li>Ruby</li>
-					</ul>
-					<div class="full-width-btn">
-						<a href="#">See Project</a>
-					</div>
-				</article>
-				<article class="secondary-card grid-5">
-					<h4>Data Dashboard Healthcare</h4>
-					<p>
-						A daily selection of privately personalized reads; no accounts or
-						sign-ups required. has been the industry's standard
-					</p>
-					<ul>
-						<li>HTML</li>
-						<li>Bootstrap</li>
-						<li>Ruby</li>
-					</ul>
-					<div class="full-width-btn">
-						<a href="#">See Project</a>
-					</div>
-				</article>
-				<article class="secondary-card grid-6">
-					<h4>Data Dashboard Healthcare</h4>
-					<p>
-						A daily selection of privately personalized reads; no accounts or
-						sign-ups required. has been the industry's standard
-					</p>
-					<ul>
-						<li>HTML</li>
-						<li>Bootstrap</li>
-						<li>Ruby</li>
-					</ul>
-					<div class="full-width-btn">
-						<a href="#">See Project</a>
-					</div>
-				</article>
-			</section>
-		</section>
+		<!-- The next container is for the cards created dynamically in Javascript -->
+		<section id="works-container" class="works-grid-container"></section>
 		<section class="about-me-container">
 			<!-- there is two new container for desktop version, to make more easy
     the positioning of the containers -->
@@ -332,6 +206,7 @@
 				</div>
 			</div>
 		</section>
+	</main>
 		<footer>
 			<section class="contact">
 				<form action="https://formspree.io/f/mlezobkj" method="POST">
@@ -423,7 +298,51 @@
 				<hr class="bottom-line-social-icons" />
 			</div>
 		</footer>
+
+		<section  class="popup-section no-visible">
+			<article>
+				<div class="title-menu">
+					<h3>Multi Post Stories</h3>
+					<img id="popUp-close-btn" alt="X button" src="./Icons/Icon-Cancel.svg" />
+				</div>
+				<ul>
+					<li>HTML</li>
+					<li>Boootstrap</li>
+					<li>Ruby on rails</li>
+				</ul>
+				<div class="project-resume">
+					<div class="image-container">
+						<img
+							id="resume-image"
+							src="./images/Detail-popup-image.svg"
+							alt="image whit a number ten and background pink"
+						/>
+					</div>
+					<div class="text-container">
+						<p>
+							Lorem Ipsum is simply dummy text of the printing and typesetting
+							industry. Lorem Ipsum has been the industry's standard dummy text
+							ever since the 1500s, when an unknown printer took a galley of
+							type and scrambled it to make a type specimen book. It has
+							survived not only five centuries, but also the leap into
+							electronic typesetting, remaining essent
+						</p>
+						<ul>
+							<li class="link-button">
+							<a target="_blank" rel="noopener" href="https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio-">
+								See Live</a>
+									<img class="resume-icon" alt="export icon" src="Icons/Icon-Export.svg" />
+								</li>
+								<li class="link-button">
+									<a target="_blank" rel="noopener" href="https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio-/">
+										See Source</a>
+											<img class="resume-icon" alt="export icon" src="Icons/Icon-GitHub.svg" />
+								</li>
+						</ul>
+					</div>
+				</div>
+			</article>
+		</section>
 		<script src="script.js"></script>
-		<script src="./js/bootstrap.bundle.min.js"></script>
 	</body>
 </html>

@@ -19,6 +19,31 @@ ul {
   padding: 0;
 }
 
+body {
+  position: relative;
+}
+
+/* blur is for header and main for popup */
+.blur {
+  filter: blur(0.8rem);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* disable-scroll for body for popup
+.disable-scroll {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+} */
+
+.visible {
+  display: block;
+}
+
+.no-visible {
+  display: none;
+}
+
 .ptitle {
   font-size: 20px;
   color: white;
@@ -59,6 +84,11 @@ ul {
   padding: 22px 22px 0 0;
 }
 
+.button-see-project-multi-post-stories a {
+  width: 100%;
+  height: 100%;
+}
+
 .nav-mobile-menu ul li {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
@@ -78,10 +108,12 @@ ul {
 .nav-mobile-menu .close-btn {
   display: flex;
   justify-content: flex-end;
+  color: white;
 }
 
 #close-button {
   padding: 30px;
+  color: white;
 }
 
 .options-button {
@@ -237,18 +269,19 @@ ul {
 .technologies-container-works-one {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 41px;
 }
 
 .button-see-project-multi-post-stories {
-  border: none;
-  width: 124px;
-  height: 48px;
+  text-align: center;
   background: #ff6b00;
   color: white;
-  font-size: 17px;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
+  line-height: 24px;
+  font-size: 17px;
   letter-spacing: 0.03em;
-  margin: 15px 0;
+  padding: 20px 47px 20px 47px;
 }
 
 .button-see-project-multi-post-stories:hover {
@@ -320,6 +353,33 @@ ul {
   padding: 0;
 }
 
+/* This class were added here because Linters give me the next error
+1000:1 Expected selector ".popup-section ul li" to come before selector ".grid-section .secondary-card no-descending-specificity
+li"
+ 1050:1 Expected selector ".text-container ul li" to come before selector ".grid-section .secondary-card no-descending-specificity
+li" */
+
+.popup-section ul li {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: rgb(60, 58, 57);
+  border: solid 1px black;
+  padding: 10px 12px;
+  margin-right: 10px;
+}
+
+.text-container ul li {
+  border: none;
+  cursor: pointer;
+  display: flex;
+  font-size: 17px;
+  align-items: flex-end;
+  background-color: #ff6b00;
+  padding: 10px 20px;
+}
+
 .grid-section .secondary-card li {
   background-color: rgba(0, 0, 0, 0.5);
   font-family: 'Inter', sans-serif;
@@ -356,17 +416,6 @@ ul {
 
 .resume-button-container {
   padding: 0 0 0 24px;
-}
-
-#button-resume {
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  color: white;
-  border: none;
-  width: 161px;
-  height: 48px;
-  background: #ff6b00;
 }
 
 #button-resume:hover {
@@ -744,10 +793,6 @@ footer {
     margin: 0;
   }
 
-  .works-grid-container {
-    padding: 0 140px 120px;
-  }
-
   .works-section-one-container {
     display: flex;
     flex-direction: row;
@@ -783,10 +828,6 @@ footer {
     font-size: 20px;
     line-height: 28px;
     margin: 24px 0;
-  }
-
-  .button-see-project-multi-post-stories {
-    margin-top: 24px;
   }
 
   .grid-section {
@@ -970,5 +1011,127 @@ footer {
     color: white;
     border: none;
     margin: 24px 0 0 0;
+  }
+}
+
+.popup-section {
+  background-color: white;
+  margin: 60px 16px 0 16px;
+  padding: 16px;
+  position: absolute;
+  top: 0;
+}
+
+.popup-section ul {
+  display: flex;
+  margin: 0 0 34px 0;
+}
+
+.title-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 0 60px 0;
+}
+
+.title-menu h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.title-menu img {
+  cursor: pointer;
+}
+
+.project-resume p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.image-container {
+  margin-bottom: 24px;
+}
+
+#resume-image {
+  width: 100%;
+  height: auto;
+}
+
+.text-container ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons-resume {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+.buttons-resume button {
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  width: 159px;
+  height: 48px;
+  color: white;
+  background-color: rgb(255 107 0);
+}
+
+.buttons-resume button:hover {
+  background-color: #fff5e1;
+  color: #ff6b00;
+}
+
+.buttons-resume button:active {
+  background-color: #e05304;
+}
+
+.buttons-resume button:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+}
+
+@media only screen and (min-width: 800px) {
+  .popup-section {
+    margin: 112px 142px 0 142px;
+  }
+
+  .title-menu {
+    margin: 0 0 20px 0;
+  }
+
+  .text-container ul {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .popup-section .title-menu ul {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 0 50px 0;
+  }
+
+  .project-resume {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .project-resume .image-container {
+    margin-bottom: 10px;
+  }
+
+  .project-resume .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 50%;
+    padding-left: 16px;
   }
 }
