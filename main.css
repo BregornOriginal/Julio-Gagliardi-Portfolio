@@ -264,20 +264,23 @@ body {
 .technologies-container-works-one {
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 41px;
 }
 
 .button-see-project-multi-post-stories {
-	border: none;
-	width: 124px;
-	height: 48px;
+	text-align: center;
 	background: #ff6b00;
 	color: white;
 	font-size: 17px;
 	font-weight: 700;
 	letter-spacing: 0.03em;
-	margin: 15px 0;
+	padding: 20px 47px 20px 47px;
 }
 
+.button-see-project-multi-post-stories a {
+	width: 100%;
+	height: 100%;
+}
 .button-see-project-multi-post-stories:hover {
 	background-color: #fff5e1;
 	color: #ff6b00;
@@ -382,17 +385,6 @@ body {
 
 .resume-button-container {
 	padding: 0 0 0 24px;
-}
-
-#button-resume {
-	font-weight: 700;
-	font-size: 17px;
-	line-height: 24px;
-	color: white;
-	border: none;
-	width: 161px;
-	height: 48px;
-	background: #ff6b00;
 }
 
 #button-resume:hover {
@@ -807,10 +799,6 @@ footer {
 		margin: 24px 0;
 	}
 
-	.button-see-project-multi-post-stories {
-		margin-top: 24px;
-	}
-
 	.grid-section {
 		display: grid;
 		gap: 10px;
@@ -996,6 +984,8 @@ footer {
 }
 
 .popup-section {
+	background-color: white;
+	margin: 60px 16px 0 16px;
 	padding: 16px;
 	position: absolute;
 	top: 0;
@@ -1014,6 +1004,21 @@ footer {
 	border: solid 1px black;
 	padding: 10px 12px;
 	margin-right: 10px;
+}
+
+.text-container ul{
+	display: flex;
+	justify-content: space-between;
+}
+
+.text-container ul li {
+	border: none;
+	cursor: pointer;
+	display: flex;
+	font-size: 17px;
+	align-items: flex-end;
+	background-color: #ff6b00;
+	padding: 10px 20px;
 }
 
 .title-menu {
@@ -1078,15 +1083,15 @@ footer {
 	color: #5b5957;
 }
 
-.resume-icon {
-  width: 18px;
-	height: 20px;
-}
-
 @media only screen and (min-width: 768px) {
 	.title-menu {
 		margin: 0 0 20px 0;
 	}
+
+	.popup-section {
+		margin: 112px 142px 0 142px;
+	}
+
 	.popup-section ul {
 		display: flex;
 		justify-content: flex-start;

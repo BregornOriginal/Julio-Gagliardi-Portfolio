@@ -150,9 +150,9 @@ for (let i = 0; i < $projectList.length; i += 1) {
     <li class="technologies-works-one">${$projectList[i].technologies.secondTechnologie}</li>
     <li class="technologies-works-one">${$projectList[i].technologies.thirdTechnologie}</li>
     <li class="technologies-works-one">${$projectList[i].technologies.fourThechnologie}</li>
-  </ul>
-  <a class="button-see-project-multi-post-stories popup-button" href="#">See Project</a>
-</div>
+    </ul>
+    <a class="button-see-project-multi-post-stories popup-button" href="#">See Project</a>
+  </div>
 </div>`;
     $worksContainer.appendChild($article);
   } else {
@@ -167,9 +167,8 @@ for (let i = 0; i < $projectList.length; i += 1) {
   <li>${$projectList[i].technologies.secondTechnologie}</li>
   <li>${$projectList[i].technologies.thirdTechnologie}</li>
 </ul>
-<div class="full-width-btn popup-button">
-  <a href="#">See Project</a>
-</div>`;
+  <a class="full-width-btn popup-button" href="#">See Project</a>
+`;
     $gridSection.appendChild($article);
   }
 };
@@ -186,7 +185,8 @@ const $main = document.getElementById('main-popup');
 for (let i = 0; i < $buttonsPopup.length; i += 1) {
 $buttonsPopup[i].addEventListener('click', () => {
   $popupSection.classList.remove('no-visible')
-  
-  
+  $body.classList.add('disable-scroll');
+  $header.classList.add('blur');
+  $main.classList.add('blur');
 })
 };
