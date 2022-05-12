@@ -48,60 +48,81 @@ const $projectList = [{
     secondTechnologie: 'HTML',
     thirdTechnologie: 'Bootstrap',
     fourThechnologie: 'Ruby',
-  }
+    
+  },
+  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio-/',
+  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio-',
 }, {
   title: 'Data Dashboard Healthcare',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
+  featureImage: './images/image-background-data-dashboard.svg',
   technologies: {
     firstTechnologie: 'HTML',
     secondTechnologie: 'Bootstrap',
     thirdTechnologie: 'Ruby',
-  }
+  },
+  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio-/',
+  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio-',
 },
 {
   title: 'Data Dashboard Healthcare',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
+  featureImage: './images/image-background-data-dashboard.svg',
   technologies: {
     firstTechnologie: 'HTML',
     secondTechnologie: 'Bootstrap',
     thirdTechnologie: 'Ruby',
-  }
+  },
+  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio-/',
+  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio-',
 },
 {
   title: 'Data Dashboard Healthcare',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
+  featureImage: './images/image-background-data-dashboard.svg',
   technologies: {
     firstTechnologie: 'HTML',
     secondTechnologie: 'Bootstrap',
     thirdTechnologie: 'Ruby',
-  }
+  },
+  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio-/',
+  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio-',
 },
 {
   title: 'Data Dashboard Healthcare',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
+  featureImage: './images/image-background-data-dashboard.svg',
   technologies: {
     firstTechnologie: 'HTML',
     secondTechnologie: 'Bootstrap',
     thirdTechnologie: 'Ruby',
-  }
+  },
+  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio-/',
+  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio-',
 },
 {
   title: 'Data Dashboard Healthcare',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
+  featureImage: './images/image-background-data-dashboard.svg',
   technologies: {
     firstTechnologie: 'HTML',
     secondTechnologie: 'Bootstrap',
     thirdTechnologie: 'Ruby',
-  }
+  },
+  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio-/',
+  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio-',
 },
 {
   title: 'Data Dashboard Healthcare',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
+  featureImage: './images/image-background-data-dashboard.svg',
   technologies: {
     firstTechnologie: 'HTML',
     secondTechnologie: 'Bootstrap',
     thirdTechnologie: 'Ruby',
-  }
+  },
+  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio-/',
+  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio-',
 }];
 
 const $worksContainer = document.getElementById('works-container');
@@ -131,7 +152,7 @@ for (let i = 0; i < $projectList.length; i += 1) {
     <li class="technologies-works-one">${$projectList[i].technologies.thirdTechnologie}</li>
     <li class="technologies-works-one">${$projectList[i].technologies.fourThechnologie}</li>
   </ul>
-  <button type="button" class="button-see-project-multi-post-stories">
+  <button type="button" class="button-see-project-multi-post-stories popup-button">
     See Project
   </button>
 </div>
@@ -149,7 +170,7 @@ for (let i = 0; i < $projectList.length; i += 1) {
   <li>${$projectList[i].technologies.secondTechnologie}</li>
   <li>${$projectList[i].technologies.thirdTechnologie}</li>
 </ul>
-<div class="full-width-btn">
+<div class="full-width-btn popup-button">
   <a href="#">See Project</a>
 </div>`;
     $gridSection.appendChild($article);
@@ -157,3 +178,13 @@ for (let i = 0; i < $projectList.length; i += 1) {
 };
 
 $worksContainer.appendChild($gridSection);
+
+const $buttonsPopup = document.querySelectorAll('popup-button');
+const $popupSection = document.querySelector('.popup-section');
+
+
+for (let i = 0; i < $buttonsPopup.length; i += 1) {
+$buttonsPopup[i].addEventListener('click', () => {
+  $popupSection.classList.remove('no-visible')
+})
+};

@@ -36,6 +36,14 @@ body {
 	overflow: hidden;
 }
 
+.visible {
+	display: block;
+}
+
+.no-visible {
+	display: none;
+}
+
 .ptitle {
 	font-size: 20px;
 	color: white;
@@ -990,7 +998,7 @@ footer {
 .popup-section {
 	padding: 16px;
 	position: absolute;
-	top: 0;
+	/* top: 0; */
 }
 .popup-section ul {
 	display: flex;
@@ -1050,7 +1058,7 @@ footer {
 	font-weight: 700;
 	font-size: 17px;
 	line-height: 24px;
-	width: 134px;
+	width: 159px;
 	height: 48px;
 	color: white;
 	background-color: rgb(255 107 0);
@@ -1068,6 +1076,11 @@ footer {
 .buttons-resume button:disabled {
 	background-color: #f4f1f0;
 	color: #5b5957;
+}
+
+.resume-icon {
+  width: 18px;
+	height: 20px;
 }
 
 @media only screen and (min-width: 768px) {
