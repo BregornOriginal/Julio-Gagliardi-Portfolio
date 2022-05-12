@@ -1006,21 +1006,6 @@ footer {
 	margin-right: 10px;
 }
 
-.text-container ul{
-	display: flex;
-	justify-content: space-between;
-}
-
-.text-container ul li {
-	border: none;
-	cursor: pointer;
-	display: flex;
-	font-size: 17px;
-	align-items: flex-end;
-	background-color: #ff6b00;
-	padding: 10px 20px;
-}
-
 .title-menu {
 	display: flex;
 	flex-direction: row;
@@ -1028,11 +1013,15 @@ footer {
 	margin: 0 0 60px 0;
 }
 
-.title-menu p {
+.title-menu h3 {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
 	font-size: 32px;
 	line-height: 44px;
+}
+
+.title-menu img {
+	cursor: pointer;
 }
 
 .project-resume p {
@@ -1049,6 +1038,21 @@ footer {
 #resume-image {
 	width: 100%;
 	height: auto;
+}
+
+.text-container ul{
+	display: flex;
+	justify-content: space-between;
+}
+
+.text-container ul li {
+	border: none;
+	cursor: pointer;
+	display: flex;
+	font-size: 17px;
+	align-items: flex-end;
+	background-color: #ff6b00;
+	padding: 10px 20px;
 }
 
 .buttons-resume {
@@ -1083,23 +1087,20 @@ footer {
 	color: #5b5957;
 }
 
-@media only screen and (min-width: 768px) {
-	.title-menu {
-		margin: 0 0 20px 0;
-	}
+@media only screen and (min-width: 800px) {
 
 	.popup-section {
 		margin: 112px 142px 0 142px;
 	}
 
-	.popup-section ul {
+	.title-menu {
+		margin: 0 0 20px 0;
+	}
+
+	.popup-section .title-menu ul {
 		display: flex;
 		justify-content: flex-start;
 		margin: 0 0 50px 0;
-	}
-
-	.image-container {
-		margin: 0 25px 0 0;
 	}
 
 	.project-resume {
@@ -1107,19 +1108,15 @@ footer {
 		flex-direction: row;
 	}
 
-	.text-container {
+	.project-resume .image-container {
+		margin-bottom: 10px;
+	}
+
+	.project-resume .text-container {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		flex-basis: 50%;
-	}
-
-	.buttons-resume {
-		display: flex;
-		justify-content: flex-start;
-		padding: 0;
-	}
-	.buttons-resume button {
-		margin-right: 10px;
+		padding-left: 16px;
 	}
 }

@@ -190,3 +190,12 @@ $buttonsPopup[i].addEventListener('click', () => {
   $main.classList.add('blur');
 })
 };
+
+const $closeBtnPopup = document.getElementById('popUp-close-btn');
+
+$closeBtnPopup.addEventListener('click', () =>{
+  $popupSection.classList.add('no-visible')
+  $body.classList.remove('disable-scroll');
+  $header.classList.remove('blur');
+  $main.classList.remove('blur');
+})
