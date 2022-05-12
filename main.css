@@ -271,8 +271,10 @@ body {
 	text-align: center;
 	background: #ff6b00;
 	color: white;
-	font-size: 17px;
+	font-family: 'Inter', sans-serif;
 	font-weight: 700;
+	line-height: 24px;
+	font-size: 17px;
 	letter-spacing: 0.03em;
 	padding: 20px 47px 20px 47px;
 }
@@ -1040,7 +1042,7 @@ footer {
 	height: auto;
 }
 
-.text-container ul{
+.text-container ul {
 	display: flex;
 	justify-content: space-between;
 }
@@ -1088,7 +1090,6 @@ footer {
 }
 
 @media only screen and (min-width: 800px) {
-
 	.popup-section {
 		margin: 112px 142px 0 142px;
 	}
