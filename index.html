@@ -8,7 +8,7 @@
 		<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 	</head>
 	<body>
-		<header class="app-header">
+		<header class="app-header" id="header-popup">
 			<a id="logo" href="#" class="ptitle">Julio's Porfolio</a>
 			<ul class="desktop-nav-icons">
 				<li><a class="nav-text" href="#"> Portfolio</a></li>
@@ -45,6 +45,7 @@
 				</ul>
 			</nav>
 		</header>
+		<main id="main-popup">
 		<section id="main-section">
 			<div class="flex-content">
 				<div class="presentation-container">
@@ -109,102 +110,8 @@
 			<h3 id="work-section" class="title-works">My Recent Works</h3>
 			<hr />
 		</div>
-		<section id="works-container" class="works-grid-container">
-
-			<!-- <section class="grid-section">
-				<article class="secondary-card grid-1">
-					<h4>Data Dashboard Healthcare</h4>
-					<p>
-						A daily selection of privately personalized reads; no accounts or
-						sign-ups required. has been the industry's standard
-					</p>
-					<ul>
-						<li>HTML</li>
-						<li>Bootstrap</li>
-						<li>Ruby</li>
-					</ul>
-					<div class="full-width-btn">
-						<a href="#">See Project</a>
-					</div>
-				</article>
-
-				<article class="secondary-card grid-2">
-					<h4>Data Dashboard Healthcare</h4>
-					<p>
-						A daily selection of privately personalized reads; no accounts or
-						sign-ups required. has been the industry's standard
-					</p>
-					<ul>
-						<li>HTML</li>
-						<li>Bootstrap</li>
-						<li>Ruby</li>
-					</ul>
-					<div class="full-width-btn">
-						<a href="#">See Project</a>
-					</div>
-				</article>
-				<article class="secondary-card grid-3">
-					<h4>Data Dashboard Healthcare</h4>
-					<p>
-						A daily selection of privately personalized reads; no accounts or
-						sign-ups required. has been the industry's standard
-					</p>
-					<ul>
-						<li>HTML</li>
-						<li>Bootstrap</li>
-						<li>Ruby</li>
-					</ul>
-					<div class="full-width-btn">
-						<a href="#">See Project</a>
-					</div>
-				</article>
-				<article class="secondary-card grid-4">
-					<h4>Data Dashboard Healthcare</h4>
-					<p>
-						A daily selection of privately personalized reads; no accounts or
-						sign-ups required. has been the industry's standard
-					</p>
-					<ul>
-						<li>HTML</li>
-						<li>Bootstrap</li>
-						<li>Ruby</li>
-					</ul>
-					<div class="full-width-btn">
-						<a href="#">See Project</a>
-					</div>
-				</article>
-				<article class="secondary-card grid-5">
-					<h4>Data Dashboard Healthcare</h4>
-					<p>
-						A daily selection of privately personalized reads; no accounts or
-						sign-ups required. has been the industry's standard
-					</p>
-					<ul>
-						<li>HTML</li>
-						<li>Bootstrap</li>
-						<li>Ruby</li>
-					</ul>
-					<div class="full-width-btn">
-						<a href="#">See Project</a>
-					</div>
-				</article>
-				<article class="secondary-card grid-6">
-					<h4>Data Dashboard Healthcare</h4>
-					<p>
-						A daily selection of privately personalized reads; no accounts or
-						sign-ups required. has been the industry's standard
-					</p>
-					<ul>
-						<li>HTML</li>
-						<li>Bootstrap</li>
-						<li>Ruby</li>
-					</ul>
-					<div class="full-width-btn">
-						<a href="#">See Project</a>
-					</div>
-				</article>
-			</section> -->
-		</section>
+		<!-- The next container is for the cards created dynamically in Javascript -->
+		<section id="works-container" class="works-grid-container"></section>
 		<section class="about-me-container">
 			<!-- there is two new container for desktop version, to make more easy
     the positioning of the containers -->
@@ -299,6 +206,7 @@
 				</div>
 			</div>
 		</section>
+	</main>
 		<footer>
 			<section class="contact">
 				<form action="https://formspree.io/f/mlezobkj" method="POST">
@@ -390,11 +298,12 @@
 				<hr class="bottom-line-social-icons" />
 			</div>
 		</footer>
-		<!-- <section>
+
+		<section  class="popup-section no-visible">
 			<article>
 				<div class="title-menu">
 					<p>Multi Post Stories</p>
-					<button>X</button>
+					<img alt="X button" src="./Icons/Icon-Cancel.svg" />
 				</div>
 				<ul>
 					<li>HTML</li>
@@ -402,23 +311,34 @@
 					<li>Ruby on rails</li>
 				</ul>
 				<div class="project-resume">
-					<img
-						src="./images/Detail-popup-image.svg"
-						alt="image whit a number ten and background pink"
-					/>
-					<p>
-						Lorem Ipsum is simply dummy text of the printing and typesetting
-						industry. Lorem Ipsum has been the industry's standard dummy text
-						ever since the 1500s, when an unknown printer took a galley of type
-						and scrambled it to make a type specimen book. It has survived not
-						only five centuries, but also the leap into electronic typesetting,
-						remaining essent
-					</p>
-					<button>See Live</button>
-					<button>See Source</button>
+					<div class="image-container">
+						<img
+							id="resume-image"
+							src="./images/Detail-popup-image.svg"
+							alt="image whit a number ten and background pink"
+						/>
+					</div>
+					<div class="text-container">
+						<p>
+							Lorem Ipsum is simply dummy text of the printing and typesetting
+							industry. Lorem Ipsum has been the industry's standard dummy text
+							ever since the 1500s, when an unknown printer took a galley of
+							type and scrambled it to make a type specimen book. It has
+							survived not only five centuries, but also the leap into
+							electronic typesetting, remaining essent
+						</p>
+						<div class="buttons-resume">
+							<button>
+								See Live <img class="resume-icon" alt="export icon" src="Icons/Icon-Export.svg" />
+							</button>
+							<button>
+								See Source <img class="resume-icon" alt="git hub icon" src="Icons/Icon-GitHub.svg" />
+							</button>
+						</div>
+					</div>
 				</div>
 			</article>
-		</section> -->
+		</section>
 		<script src="script.js"></script>
 	</body>
 </html>

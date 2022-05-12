@@ -48,112 +48,145 @@ const $projectList = [{
     secondTechnologie: 'HTML',
     thirdTechnologie: 'Bootstrap',
     fourThechnologie: 'Ruby',
-  }
+    
+  },
+  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio-/',
+  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio-',
 }, {
   title: 'Data Dashboard Healthcare',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
+  featureImage: './images/image-background-data-dashboard.svg',
   technologies: {
     firstTechnologie: 'HTML',
     secondTechnologie: 'Bootstrap',
     thirdTechnologie: 'Ruby',
-  }
+  },
+  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio-/',
+  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio-',
 },
 {
   title: 'Data Dashboard Healthcare',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
+  featureImage: './images/image-background-data-dashboard.svg',
   technologies: {
     firstTechnologie: 'HTML',
     secondTechnologie: 'Bootstrap',
     thirdTechnologie: 'Ruby',
-  }
+  },
+  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio-/',
+  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio-',
 },
 {
   title: 'Data Dashboard Healthcare',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
+  featureImage: './images/image-background-data-dashboard.svg',
   technologies: {
     firstTechnologie: 'HTML',
     secondTechnologie: 'Bootstrap',
     thirdTechnologie: 'Ruby',
-  }
+  },
+  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio-/',
+  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio-',
 },
 {
   title: 'Data Dashboard Healthcare',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
+  featureImage: './images/image-background-data-dashboard.svg',
   technologies: {
     firstTechnologie: 'HTML',
     secondTechnologie: 'Bootstrap',
     thirdTechnologie: 'Ruby',
-  }
+  },
+  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio-/',
+  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio-',
 },
 {
   title: 'Data Dashboard Healthcare',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
+  featureImage: './images/image-background-data-dashboard.svg',
   technologies: {
     firstTechnologie: 'HTML',
     secondTechnologie: 'Bootstrap',
     thirdTechnologie: 'Ruby',
-  }
+  },
+  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio-/',
+  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio-',
 },
 {
   title: 'Data Dashboard Healthcare',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
+  featureImage: './images/image-background-data-dashboard.svg',
   technologies: {
     firstTechnologie: 'HTML',
     secondTechnologie: 'Bootstrap',
     thirdTechnologie: 'Ruby',
-  }
+  },
+  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio-/',
+  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio-',
 }];
 
 const $worksContainer = document.getElementById('works-container');
-const $article = document.createElement('article');
-$article.classList.add('works-section-one-container');
 
+const $gridSection = document.createElement('section');
+$gridSection.classList.add('grid-section');
 
-$article.innerHTML = `<div class="image-recent-works-container">
+for (let i = 0; i < $projectList.length; i += 1) {
+  const $article = document.createElement('article');
+  if (i === 0) {
+    $article.classList.add('works-section-one-container');
+    $article.innerHTML = `<div class="image-recent-works-container">
 <img
   id="image-recent-works"
-  src="${$projectList[0].featureImage}"
+  src="${$projectList[i].featureImage}"
   alt="A woman doing Yoga"
 />
 </div>
 <div class="information-and-icons-container">
-<h4 class="title-recent-works-one">${$projectList[0].title}</h4>
-<p class="description-recent-works-one">${$projectList[0].description}</p>
+<h4 class="title-recent-works-one">${$projectList[i].title}</h4>
+<p class="description-recent-works-one">${$projectList[i].description}</p>
 <div>
   <ul class="technologies-container-works-one">
-    <li class="technologies-works-one">${$projectList[0].technologies.firstTechnologie}</li>
-    <li class="technologies-works-one">${$projectList[0].technologies.secondTechnologie}</li>
-    <li class="technologies-works-one">${$projectList[0].technologies.thirdTechnologie}</li>
-    <li class="technologies-works-one">${$projectList[0].technologies.fourThechnologie}</li>
+    <li class="technologies-works-one">${$projectList[i].technologies.firstTechnologie}</li>
+    <li class="technologies-works-one">${$projectList[i].technologies.secondTechnologie}</li>
+    <li class="technologies-works-one">${$projectList[i].technologies.thirdTechnologie}</li>
+    <li class="technologies-works-one">${$projectList[i].technologies.fourThechnologie}</li>
   </ul>
-  <button type="button" class="button-see-project-multi-post-stories">
-    See Project
-  </button>
+  <a class="button-see-project-multi-post-stories popup-button" href="#">See Project</a>
 </div>
 </div>`;
-$worksContainer.appendChild($article);
+    $worksContainer.appendChild($article);
+  } else {
+    $article.classList.add('secondary-card', `grid-${[i]}`);
+    $article.innerHTML = `
+<h4>${$projectList[i].title}</h4>
+<p>
+ ${$projectList[i].description}
+</p>
+<ul>
+  <li>${$projectList[i].technologies.firstTechnologie}</li>
+  <li>${$projectList[i].technologies.secondTechnologie}</li>
+  <li>${$projectList[i].technologies.thirdTechnologie}</li>
+</ul>
+<div class="full-width-btn popup-button">
+  <a href="#">See Project</a>
+</div>`;
+    $gridSection.appendChild($article);
+  }
+};
 
-const $sectionGrid = document.createElement('section');
-$sectionGrid.classList.add('grid-section');
+$worksContainer.appendChild($gridSection);
 
-const $cardArticle = document.createElement('article');
-$cardArticle.classList.add('secondary-card', 'grid-4');
+const $buttonsPopup = document.querySelectorAll('.popup-button');
+const $popupSection = document.querySelector('.popup-section');
+const $body = document.body;
+const $header = document.getElementById('header-popup');
+const $main = document.getElementById('main-popup');
 
-$cardArticle.innerHTML = `
-<h4>Data Dashboard Healthcare</h4>
-					<p>
-						A daily selection of privately personalized reads; no accounts or
-						sign-ups required. has been the industry's standard
-					</p>
-					<ul>
-						<li>HTML</li>
-						<li>Bootstrap</li>
-						<li>Ruby</li>
-					</ul>
-					<div class="full-width-btn">
-						<a href="#">See Project</a>
-					</div>`;
 
-          $sectionGrid.appendChild($cardArticle);
-          $worksContainer.appendChild($sectionGrid);
-
+for (let i = 0; i < $buttonsPopup.length; i += 1) {
+$buttonsPopup[i].addEventListener('click', () => {
+  $popupSection.classList.remove('no-visible')
+  
+  
+})
+};

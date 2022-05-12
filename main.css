@@ -6,8 +6,6 @@
 	box-sizing: border-box;
 }
 
-/* html, body {margin: 0; height: 100%; overflow: hidden} */
-
 a {
 	text-decoration: none;
 	color: white;
@@ -19,6 +17,31 @@ li {
 
 ul {
 	padding: 0;
+}
+
+body {
+	position: relative;
+}
+
+/* blur is for header and main for popup */
+.blur {
+	filter: blur(0.8rem);
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* disable-scroll for body for popup*/
+.disable-scroll {
+	margin: 0;
+	height: 100%;
+	overflow: hidden;
+}
+
+.visible {
+	display: block;
+}
+
+.no-visible {
+	display: none;
 }
 
 .ptitle {
@@ -969,5 +992,129 @@ footer {
 		color: white;
 		border: none;
 		margin: 24px 0 0 0;
+	}
+}
+
+.popup-section {
+	padding: 16px;
+	position: absolute;
+	top: 0;
+}
+.popup-section ul {
+	display: flex;
+	margin: 0 0 34px 0;
+}
+
+.popup-section ul li {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 16px;
+	color: rgb(60, 58, 57);
+	border: solid 1px black;
+	padding: 10px 12px;
+	margin-right: 10px;
+}
+
+.title-menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0 0 60px 0;
+}
+
+.title-menu p {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 44px;
+}
+
+.project-resume p {
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.image-container {
+	margin-bottom: 24px;
+}
+
+#resume-image {
+	width: 100%;
+	height: auto;
+}
+
+.buttons-resume {
+	display: flex;
+	justify-content: space-between;
+	padding: 12px;
+}
+
+.buttons-resume button {
+	border: none;
+	font-family: 'Inter', sans-serif;
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 24px;
+	width: 159px;
+	height: 48px;
+	color: white;
+	background-color: rgb(255 107 0);
+}
+
+.buttons-resume button:hover {
+	background-color: #fff5e1;
+	color: #ff6b00;
+}
+
+.buttons-resume button:active {
+	background-color: #e05304;
+}
+
+.buttons-resume button:disabled {
+	background-color: #f4f1f0;
+	color: #5b5957;
+}
+
+.resume-icon {
+  width: 18px;
+	height: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+	.title-menu {
+		margin: 0 0 20px 0;
+	}
+	.popup-section ul {
+		display: flex;
+		justify-content: flex-start;
+		margin: 0 0 50px 0;
+	}
+
+	.image-container {
+		margin: 0 25px 0 0;
+	}
+
+	.project-resume {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.text-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		flex-basis: 50%;
+	}
+
+	.buttons-resume {
+		display: flex;
+		justify-content: flex-start;
+		padding: 0;
+	}
+	.buttons-resume button {
+		margin-right: 10px;
 	}
 }
