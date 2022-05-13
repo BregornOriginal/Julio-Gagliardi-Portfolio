@@ -205,7 +205,6 @@ const $form = document.querySelector('#form');
 const $UserEmailElement = document.querySelector('#email-address');
 
 function checkEmail(input) {
-
   let valid = false;
 
   const patternEmail = /^[a-z\d@.\-_]+$/;
@@ -214,17 +213,17 @@ function checkEmail(input) {
     valid = true;
   }
   return valid;
-};
+}
 
 function showError(input, message) {
-  const parentElement = input.parentElement;
+  const { parentElement } = input;
 
   const errorMessage = parentElement.querySelector('small');
   errorMessage.textContent = message;
-  errorMessage.classList.add('small-validation')
-};
+  errorMessage.classList.add('small-validation');
+}
 
-$form.addEventListener('submit', function (e) {
+$form.addEventListener('submit', (e) => {
   e.preventDefault();
 
   if (checkEmail($UserEmailElement)) {
