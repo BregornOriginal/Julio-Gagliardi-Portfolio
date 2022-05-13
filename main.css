@@ -579,9 +579,16 @@ footer {
   border-width: 1px;
   margin-top: 39px;
   width: 100%;
+  margin-bottom: 10px;
 }
 
-#message {
+.contact-inputs .small-validation {
+  background-color: #172b4d;
+  color: white;
+  padding: 5px 10px;
+}
+
+#text-area {
   border: none;
   background-color: #fbf8f7;
   margin-top: 24px;
@@ -997,7 +1004,7 @@ footer {
     margin: 0 142px 0 24px;
   }
 
-  #message {
+  #text-area {
     width: 454px;
   }
 

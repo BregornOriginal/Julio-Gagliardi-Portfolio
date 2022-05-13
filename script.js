@@ -130,6 +130,8 @@ const $worksContainer = document.getElementById('works-container');
 const $gridSection = document.createElement('section');
 $gridSection.classList.add('grid-section');
 
+// Creation of cards
+
 for (let i = 0; i < $projectList.length; i += 1) {
   const $article = document.createElement('article');
   if (i === 0) {
@@ -175,6 +177,7 @@ for (let i = 0; i < $projectList.length; i += 1) {
 
 $worksContainer.appendChild($gridSection);
 
+// Open "See Project" Close button popup
 const $buttonsPopup = document.querySelectorAll('.popup-button');
 const $popupSection = document.querySelector('.popup-section');
 const $header = document.getElementById('header-popup');
@@ -194,4 +197,38 @@ $closeBtnPopup.addEventListener('click', () => {
   $popupSection.classList.add('no-visible');
   $header.classList.remove('blur');
   $main.classList.remove('blur');
+});
+
+// Contact form validation
+
+const $form = document.querySelector('#form');
+const $UserEmailElement = document.querySelector('#email-address');
+
+function checkEmail(input) {
+  let valid = false;
+
+  const patternEmail = /^[a-z\d@.\-_]+$/;
+
+  if (patternEmail.test(input.value)) {
+    valid = true;
+  }
+  return valid;
+}
+
+function showError(input, message) {
+  const { parentElement } = input;
+
+  const errorMessage = parentElement.querySelector('small');
+  errorMessage.textContent = message;
+  errorMessage.classList.add('small-validation');
+}
+
+$form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  if (checkEmail($UserEmailElement)) {
+    $form.submit();
+  } else {
+    showError($UserEmailElement, 'Please complete this field whit lower case characters');
+  }
 });
