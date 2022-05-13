@@ -418,6 +418,16 @@ li" */
   padding: 0 0 0 24px;
 }
 
+#button-resume {
+	background-color: rgb(245, 88, 0);
+	color: white;
+	padding: 10px;
+	font-family: 'Inter', sans-serif;
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 24px;
+}
+
 #button-resume:hover {
   background-color: #fff5e1;
   color: #ff6b00;
