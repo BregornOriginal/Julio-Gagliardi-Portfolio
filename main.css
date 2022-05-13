@@ -1135,3 +1135,10 @@ footer {
     padding-left: 16px;
   }
 }
+
+/* form validation classes  */
+
+.error {
+  border-color: solid 1px red;
+  color: red;
+};
