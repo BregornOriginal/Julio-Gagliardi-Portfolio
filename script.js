@@ -221,7 +221,7 @@ function showError(input, message) {
 
   const errorMessage = parentElement.querySelector('small');
   errorMessage.textContent = message;
-  errorMessage.classList.add('error');
+  errorMessage.classList.add('small-validation')
 };
 
 $form.addEventListener('submit', function (e) {
