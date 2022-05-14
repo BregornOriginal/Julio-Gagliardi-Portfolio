@@ -914,10 +914,12 @@ footer {
 
   #about-me-image-desktop {
     display: block;
+
   }
 
   .container-top-section-about-me-desktop {
     display: flex;
+    justify-content: space-between;
     margin: 99px 0 147px 42px;
   }
 
