@@ -29,12 +29,13 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* disable-scroll for body for popup
+/* disable-scroll for html for popup and movile menu */
+
 .disable-scroll {
   margin: 0;
   height: 100%;
   overflow: hidden;
-} */
+}
 
 .visible {
   display: block;
@@ -54,6 +55,7 @@ body {
 
 .app-header {
   display: flex;
+  position: fixed;
   flex-wrap: nowrap;
   background-color: #3c3a39;
   width: 100%;
@@ -105,6 +107,11 @@ body {
   color: #fff5e1;
 }
 
+.nav-mobile-menu ul li a:hover {
+  color:#e05304;
+  filter: brightness(1.25);
+}
+
 .nav-mobile-menu .close-btn {
   display: flex;
   justify-content: flex-end;
@@ -112,8 +119,13 @@ body {
 }
 
 #close-button {
-  padding: 30px;
+  margin: 30px;
   color: white;
+}
+
+#close-button:hover {
+  cursor: pointer;
+  filter: brightness(1.5);
 }
 
 .options-button {
@@ -122,15 +134,12 @@ body {
 }
 
 #main-section {
-  /* position: relative; */
   width: 100%;
   height: calc(100vh - 50px);
   background: #1c1a19;
   background-image: url(./Icons/Illustration.svg);
   background-repeat: no-repeat;
   background-position: 100% 100%;
-
-  /* padding: 105px 16px 22px 16px; */
 }
 
 .flex-content {
@@ -186,6 +195,11 @@ body {
   width: 25px;
 }
 
+.main-icons:hover {
+  width: 25px;
+  filter: brightness(2);
+}
+
 .poligon-illustration {
   position: absolute;
   width: 150px;
@@ -196,6 +210,10 @@ body {
 .menu-button {
   height: 40px;
   width: 40px;
+}
+
+.menu-button:hover {
+  cursor: pointer;
 }
 
 /* Here start section of works number one */
@@ -229,6 +247,7 @@ body {
 .works-section-one-container {
   display: flex;
   flex-direction: column;
+  margin-bottom: 50px;
 }
 
 .image-recent-works-container {
@@ -290,6 +309,7 @@ body {
 }
 
 .button-see-project-multi-post-stories:active {
+  color: white;
   background-color: #e05304;
 }
 
@@ -308,6 +328,21 @@ body {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+}
+
+.full-width-btn:hover {
+  background-color: #fff5e1;
+  color: #ff6b00;
+}
+
+.full-width-btn:active {
+  color: white;
+  background-color: #e05304;
+}
+
+.full-width-btn:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
 }
 
 /* Here start section of works number two */
@@ -429,15 +464,17 @@ li" */
 }
 
 #button-resume:hover {
+  cursor: pointer;
   background-color: #fff5e1;
   color: #ff6b00;
 }
 
-.button-resume:active {
+#button-resume:active {
+  color: white;
   background-color: #e05304;
 }
 
-.button-resume:disabled {
+#button-resume:disabled {
   background-color: #f4f1f0;
   color: #5b5957;
 }
@@ -651,6 +688,11 @@ footer {
   justify-content: center;
 }
 
+.social-icons-footer:hover {
+  width: 50px;
+  filter: brightness(2);
+}
+
 .container-line-container {
   display: flex;
   flex-direction: row;
@@ -695,6 +737,10 @@ footer {
     margin: 0 18px;
   }
 
+  .nav-text:hover {
+    color: #e05304;
+  }
+
   .app-header {
     justify-content: space-around;
     height: 72px;
@@ -720,6 +766,10 @@ footer {
     font-size: 20px;
     margin: 25px 0 0 118px;
     position: absolute;
+  }
+
+  .ptitle:hover {
+    color: #e05304;
   }
 
   .presentation-container {
@@ -757,7 +807,7 @@ footer {
   }
 
   .main-icons {
-    width: 17px;
+    width: 25px;
   }
 
   .container-icons {
@@ -890,20 +940,6 @@ footer {
     background-image: url(./images/image-background-works-main.svg);
   }
 
-  .full-width-btn:hover {
-    background-color: #fff5e1;
-    color: #ff6b00;
-  }
-
-  .full-width-btn:active {
-    background-color: #e05304;
-  }
-
-  .full-width-btn:disabled {
-    background-color: #f4f1f0;
-    color: #5b5957;
-  }
-
   .secondary-card:hover .full-width-btn {
     display: block;
   }
@@ -1030,6 +1066,21 @@ footer {
     color: white;
     border: none;
     margin: 24px 0 0 0;
+    cursor: pointer;
+  }
+
+  .button-submit-desktop:hover {
+    background-color: #fff5e1;
+    color: #ff6b00;
+  }
+
+  .button-submit-desktop:active {
+    background-color: #e05304;
+  }
+
+  .button-submit-desktop:disabled {
+    background-color: #f4f1f0;
+    color: #5b5957;
   }
 }
 

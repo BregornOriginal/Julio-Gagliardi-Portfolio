@@ -6,12 +6,15 @@ const $closeButton = document.getElementById('close-button');
 const $portfolio = document.getElementById('porfolio');
 const $about = document.getElementById('about');
 const $contact = document.getElementById('contact');
+const $html = document.querySelector('html');
+
 
 // Functions
 function hideMobileMenu() {
   $hamburgerButton.classList.remove('menu-display-off');
   $logo.classList.remove('menu-display-off');
   $menuNav.classList.add('menu-display-off');
+  $html.classList.remove('disable-scroll');
 }
 
 // Dom Manipulation
@@ -19,6 +22,8 @@ $hamburgerButton.addEventListener('click', () => {
   $hamburgerButton.classList.add('menu-display-off');
   $logo.classList.add('menu-display-off');
   $menuNav.classList.remove('menu-display-off');
+  $menuNav.classList.add('disable-scroll');
+  $html.classList.add('disable-scroll');
 });
 
 $closeButton.addEventListener('click', () => {
@@ -188,6 +193,7 @@ for (let i = 0; i < $buttonsPopup.length; i += 1) {
     $popupSection.classList.remove('no-visible');
     $header.classList.add('blur');
     $main.classList.add('blur');
+    $html.classList.add('disable-scroll');
   });
 }
 
@@ -197,6 +203,7 @@ $closeBtnPopup.addEventListener('click', () => {
   $popupSection.classList.add('no-visible');
   $header.classList.remove('blur');
   $main.classList.remove('blur');
+  $html.classList.remove('disable-scroll');
 });
 
 // Contact form validation
