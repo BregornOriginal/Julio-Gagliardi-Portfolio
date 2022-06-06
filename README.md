@@ -18,7 +18,7 @@ On this proyect I will work on the next:
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio-/)
+[Live Demo Link](https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio/)
 
 ## Getting Started
 
