@@ -47,12 +47,11 @@ $contact.addEventListener('click', () => {
 const $projectList = [{
   title: 'Multi-Post Stories',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-  featureImage: './images/image-section-one.svg',
+  featureImage: './images/Screenshoot-Project 1/Capstone-module-1-mobile.png',
   technologies: {
     firstTechnologie: 'CSS',
     secondTechnologie: 'HTML',
-    thirdTechnologie: 'Bootstrap',
-    fourThechnologie: 'Ruby',
+    thirdTechnologie: 'JavasCript',
 
   },
   liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio-/',
@@ -156,7 +155,6 @@ for (let i = 0; i < $projectList.length; i += 1) {
     <li class="technologies-works-one">${$projectList[i].technologies.firstTechnologie}</li>
     <li class="technologies-works-one">${$projectList[i].technologies.secondTechnologie}</li>
     <li class="technologies-works-one">${$projectList[i].technologies.thirdTechnologie}</li>
-    <li class="technologies-works-one">${$projectList[i].technologies.fourThechnologie}</li>
     </ul>
     <a class="button-see-project-multi-post-stories popup-button" href="#">See Project</a>
   </div>
@@ -180,30 +178,109 @@ for (let i = 0; i < $projectList.length; i += 1) {
   }
 }
 
+// Creating the popup-projects
+
+const $sectionPopupContainer = document.querySelector('#popup-container');
+
+for (let i = 0; i < $projectList.length; i += 1) {
+  const $article = document.createElement('section');
+  $article.classList.add('popup-section', 'no-visible');
+  $article.innerHTML = `<div class="title-menu">
+      <h3>Multi Post Stories</h3>
+      <img
+        id="popUp-close-btn"
+        alt="X button"
+        src="./Icons/Icon-Cancel.svg"
+      />
+    </div>
+    <ul>
+      <li>HTML</li>
+      <li>Boootstrap</li>
+      <li>Ruby on rails</li>
+    </ul>
+    <div class="project-resume">
+      <div class="image-container">
+        <img
+          id="resume-image"
+          src="./images/Screenshoot-Project 1/Capstone-module-1-mobile.png"
+          alt="image whit a number ten and background pink"
+        />
+      </div>
+      <div class="text-container">
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text
+          ever since the 1500s, when an unknown printer took a galley of
+          type and scrambled it to make a type specimen book. It has
+          survived not only five centuries, but also the leap into
+          electronic typesetting, remaining essent
+        </p>
+        <ul>
+          <li class="link-button">
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio-/"
+            >
+              See Live</a
+            >
+            <img
+              class="resume-icon"
+              alt="export icon"
+              src="Icons/Icon-Export.svg"
+            />
+          </li>
+          <li class="link-button">
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio-"
+            >
+              See Source</a
+            >
+            <img
+              class="resume-icon"
+              alt="export icon"
+              src="Icons/Icon-GitHub.svg"
+            />
+          </li>
+        </ul>
+      </div>
+    </div>`;
+  $sectionPopupContainer.appendChild($article);
+}
+
+
 $worksContainer.appendChild($gridSection);
+
+const $closeBtnPopup = document.getElementById('popUp-close-btn');
 
 // Open "See Project" Close button popup
 const $buttonsPopup = document.querySelectorAll('.popup-button');
-const $popupSection = document.querySelector('.popup-section');
+const $popupSection = document.querySelectorAll('.popup-section');
 const $header = document.getElementById('header-popup');
 const $main = document.getElementById('main-popup');
 
 for (let i = 0; i < $buttonsPopup.length; i += 1) {
   $buttonsPopup[i].addEventListener('click', () => {
-    $popupSection.classList.remove('no-visible');
+    $popupSection[i].classList.remove('no-visible');
     $header.classList.add('blur');
     $main.classList.add('blur');
     $html.classList.add('disable-scroll');
   });
 }
 
-const $closeBtnPopup = document.getElementById('popUp-close-btn');
+function closePopupWindow() {
+  for (let i = 0; i < $buttonsPopup[i].length; i += 1) {
+    $popupSection[i].classList.add('no-visible');
+    $header.classList.remove('blur');
+    $main.classList.remove('blur');
+    $html.classList.remove('disable-scroll');
+  }
+}
 
 $closeBtnPopup.addEventListener('click', () => {
-  $popupSection.classList.add('no-visible');
-  $header.classList.remove('blur');
-  $main.classList.remove('blur');
-  $html.classList.remove('disable-scroll');
+  closePopupWindow();
 });
 
 // Contact form validation
