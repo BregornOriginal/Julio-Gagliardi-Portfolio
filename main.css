@@ -1117,8 +1117,8 @@ footer {
 .project-resume p {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 30px;
-  line-height: 80px;
+  font-size: 16px;
+  line-height: 25px;
 }
 
 .image-container {
@@ -1192,6 +1192,18 @@ footer {
   .project-resume {
     display: flex;
     flex-direction: row;
+  }
+
+  #resume-image {
+    width: 65%;
+    height: 100%;
+  }
+
+  .project-resume p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
   }
 
   .project-resume .image-container {
