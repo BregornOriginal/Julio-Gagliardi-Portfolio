@@ -8,7 +8,6 @@ const $about = document.getElementById('about');
 const $contact = document.getElementById('contact');
 const $html = document.querySelector('html');
 
-
 // Functions
 function hideMobileMenu() {
   $hamburgerButton.classList.remove('menu-display-off');
@@ -244,7 +243,6 @@ for (let i = 0; i < $projectList.length; i += 1) {
     </div>`;
   $sectionPopupContainer.appendChild($article);
 }
-
 
 $worksContainer.appendChild($gridSection);
 

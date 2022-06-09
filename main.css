@@ -108,7 +108,7 @@ body {
 }
 
 .nav-mobile-menu ul li a:hover {
-  color:#e05304;
+  color: #e05304;
   filter: brightness(1.25);
 }
 
@@ -454,13 +454,13 @@ li" */
 }
 
 #button-resume {
-	background-color: rgb(245, 88, 0);
-	color: white;
-	padding: 10px;
-	font-family: 'Inter', sans-serif;
-	font-weight: 700;
-	font-size: 17px;
-	line-height: 24px;
+  background-color: rgb(245, 88, 0);
+  color: white;
+  padding: 10px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
 }
 
 #button-resume:hover {
@@ -950,7 +950,6 @@ footer {
 
   #about-me-image-desktop {
     display: block;
-
   }
 
   .container-top-section-about-me-desktop {
