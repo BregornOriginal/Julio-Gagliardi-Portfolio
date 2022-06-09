@@ -45,8 +45,8 @@ $contact.addEventListener('click', () => {
 // Object details
 
 const $projectList = [{
-  title: 'Multi-Post Stories',
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+  title: 'Capstone Module 1 Microverse',
+  description: 'First Capstone for Microverse Bootcamp! I choose a topic about the Lord Of The Ring, and create a fictitious website of his Anniversary.',
   featureImage: './images/Screenshoot-Project 1/Capstone-module-1-mobile.png',
   technologies: {
     firstTechnologie: 'CSS',
@@ -54,8 +54,8 @@ const $projectList = [{
     thirdTechnologie: 'JavasCript',
 
   },
-  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio-/',
-  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio-',
+  liveVersion: 'https://bregornoriginal.github.io/capstone-module1/',
+  sourceCode: 'https://github.com/BregornOriginal/capstone-module1/',
 }, {
   title: 'Data Dashboard Healthcare',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
@@ -65,8 +65,8 @@ const $projectList = [{
     secondTechnologie: 'Bootstrap',
     thirdTechnologie: 'Ruby',
   },
-  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio-/',
-  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio-',
+  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio/',
+  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio',
 },
 {
   title: 'Data Dashboard Healthcare',
@@ -77,8 +77,8 @@ const $projectList = [{
     secondTechnologie: 'Bootstrap',
     thirdTechnologie: 'Ruby',
   },
-  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio-/',
-  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio-',
+  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio/',
+  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio',
 },
 {
   title: 'Data Dashboard Healthcare',
@@ -89,8 +89,8 @@ const $projectList = [{
     secondTechnologie: 'Bootstrap',
     thirdTechnologie: 'Ruby',
   },
-  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio-/',
-  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio-',
+  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio/',
+  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio',
 },
 {
   title: 'Data Dashboard Healthcare',
@@ -101,8 +101,8 @@ const $projectList = [{
     secondTechnologie: 'Bootstrap',
     thirdTechnologie: 'Ruby',
   },
-  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio-/',
-  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio-',
+  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio/',
+  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio',
 },
 {
   title: 'Data Dashboard Healthcare',
@@ -113,8 +113,8 @@ const $projectList = [{
     secondTechnologie: 'Bootstrap',
     thirdTechnologie: 'Ruby',
   },
-  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio-/',
-  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio-',
+  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio/',
+  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio',
 },
 {
   title: 'Data Dashboard Healthcare',
@@ -125,8 +125,8 @@ const $projectList = [{
     secondTechnologie: 'Bootstrap',
     thirdTechnologie: 'Ruby',
   },
-  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio-/',
-  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio-',
+  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio/',
+  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio',
 }];
 
 const $worksContainer = document.getElementById('works-container');
@@ -186,7 +186,7 @@ for (let i = 0; i < $projectList.length; i += 1) {
   const $article = document.createElement('section');
   $article.classList.add('popup-section', 'no-visible');
   $article.innerHTML = `<div class="title-menu">
-      <h3>Multi Post Stories</h3>
+      <h3>${$projectList[i].title}</h3>
       <img
         id="popUp-close-btn"
         alt="X button"
@@ -194,33 +194,28 @@ for (let i = 0; i < $projectList.length; i += 1) {
       />
     </div>
     <ul>
-      <li>HTML</li>
-      <li>Boootstrap</li>
-      <li>Ruby on rails</li>
+      <li>${$projectList[i].technologies.firstTechnologie}</li>
+      <li>${$projectList[i].technologies.secondTechnologie}</li>
+      <li>${$projectList[i].technologies.thirdTechnologie}</li>
     </ul>
     <div class="project-resume">
       <div class="image-container">
         <img
           id="resume-image"
-          src="./images/Screenshoot-Project 1/Capstone-module-1-mobile.png"
+          src="${$projectList[i].featureImage}"
           alt="image whit a number ten and background pink"
         />
       </div>
       <div class="text-container">
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text
-          ever since the 1500s, when an unknown printer took a galley of
-          type and scrambled it to make a type specimen book. It has
-          survived not only five centuries, but also the leap into
-          electronic typesetting, remaining essent
+        ${$projectList[i].description}
         </p>
         <ul>
           <li class="link-button">
             <a
               target="_blank"
               rel="noopener"
-              href="https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio-/"
+              href=${$projectList[i].liveVersion}
             >
               See Live</a
             >
@@ -234,7 +229,7 @@ for (let i = 0; i < $projectList.length; i += 1) {
             <a
               target="_blank"
               rel="noopener"
-              href="https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio-"
+              href=${$projectList[i].sourceCode}
             >
               See Source</a
             >
@@ -253,7 +248,7 @@ for (let i = 0; i < $projectList.length; i += 1) {
 
 $worksContainer.appendChild($gridSection);
 
-const $closeBtnPopup = document.getElementById('popUp-close-btn');
+const $closeBtnPopup = document.querySelectorAll('#popUp-close-btn');
 
 // Open "See Project" Close button popup
 const $buttonsPopup = document.querySelectorAll('.popup-button');
@@ -266,22 +261,18 @@ for (let i = 0; i < $buttonsPopup.length; i += 1) {
     $popupSection[i].classList.remove('no-visible');
     $header.classList.add('blur');
     $main.classList.add('blur');
-    $html.classList.add('disable-scroll');
+    // $html.classList.add('disable-scroll');
   });
 }
 
-function closePopupWindow() {
-  for (let i = 0; i < $buttonsPopup[i].length; i += 1) {
+for (let i = 0; i < $buttonsPopup.length; i += 1) {
+  $closeBtnPopup[i].addEventListener('click', () => {
     $popupSection[i].classList.add('no-visible');
     $header.classList.remove('blur');
     $main.classList.remove('blur');
     $html.classList.remove('disable-scroll');
-  }
+  });
 }
-
-$closeBtnPopup.addEventListener('click', () => {
-  closePopupWindow();
-});
 
 // Contact form validation
 
