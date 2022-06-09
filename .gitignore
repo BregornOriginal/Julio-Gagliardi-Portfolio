@@ -1,9 +1,2 @@
-.hintrc
-.stylelintrc.json
 .github\workflows
-linters.yml
 \node_modules
-package-lock.json
-package.json
-\css
-\js

@@ -8,7 +8,6 @@ const $about = document.getElementById('about');
 const $contact = document.getElementById('contact');
 const $html = document.querySelector('html');
 
-
 // Functions
 function hideMobileMenu() {
   $hamburgerButton.classList.remove('menu-display-off');
@@ -45,18 +44,17 @@ $contact.addEventListener('click', () => {
 // Object details
 
 const $projectList = [{
-  title: 'Multi-Post Stories',
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-  featureImage: './images/image-section-one.svg',
+  title: 'Capstone Module 1 Microverse',
+  description: 'First Capstone for Microverse Bootcamp! I choose a topic about the Lord Of The Ring, and create a fictitious website of his Anniversary.',
+  featureImage: './images/Screenshoot-Project 1/Capstone-module-1-mobile.png',
   technologies: {
     firstTechnologie: 'CSS',
     secondTechnologie: 'HTML',
-    thirdTechnologie: 'Bootstrap',
-    fourThechnologie: 'Ruby',
+    thirdTechnologie: 'JavasCript',
 
   },
-  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio-/',
-  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio-',
+  liveVersion: 'https://bregornoriginal.github.io/capstone-module1/',
+  sourceCode: 'https://github.com/BregornOriginal/capstone-module1/',
 }, {
   title: 'Data Dashboard Healthcare',
   description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
@@ -66,8 +64,8 @@ const $projectList = [{
     secondTechnologie: 'Bootstrap',
     thirdTechnologie: 'Ruby',
   },
-  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio-/',
-  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio-',
+  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio/',
+  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio',
 },
 {
   title: 'Data Dashboard Healthcare',
@@ -78,8 +76,8 @@ const $projectList = [{
     secondTechnologie: 'Bootstrap',
     thirdTechnologie: 'Ruby',
   },
-  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio-/',
-  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio-',
+  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio/',
+  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio',
 },
 {
   title: 'Data Dashboard Healthcare',
@@ -90,8 +88,8 @@ const $projectList = [{
     secondTechnologie: 'Bootstrap',
     thirdTechnologie: 'Ruby',
   },
-  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio-/',
-  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio-',
+  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio/',
+  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio',
 },
 {
   title: 'Data Dashboard Healthcare',
@@ -102,8 +100,8 @@ const $projectList = [{
     secondTechnologie: 'Bootstrap',
     thirdTechnologie: 'Ruby',
   },
-  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio-/',
-  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio-',
+  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio/',
+  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio',
 },
 {
   title: 'Data Dashboard Healthcare',
@@ -114,8 +112,8 @@ const $projectList = [{
     secondTechnologie: 'Bootstrap',
     thirdTechnologie: 'Ruby',
   },
-  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio-/',
-  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio-',
+  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio/',
+  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio',
 },
 {
   title: 'Data Dashboard Healthcare',
@@ -126,8 +124,8 @@ const $projectList = [{
     secondTechnologie: 'Bootstrap',
     thirdTechnologie: 'Ruby',
   },
-  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio-/',
-  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio-',
+  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio/',
+  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio',
 }];
 
 const $worksContainer = document.getElementById('works-container');
@@ -156,7 +154,6 @@ for (let i = 0; i < $projectList.length; i += 1) {
     <li class="technologies-works-one">${$projectList[i].technologies.firstTechnologie}</li>
     <li class="technologies-works-one">${$projectList[i].technologies.secondTechnologie}</li>
     <li class="technologies-works-one">${$projectList[i].technologies.thirdTechnologie}</li>
-    <li class="technologies-works-one">${$projectList[i].technologies.fourThechnologie}</li>
     </ul>
     <a class="button-see-project-multi-post-stories popup-button" href="#">See Project</a>
   </div>
@@ -180,31 +177,100 @@ for (let i = 0; i < $projectList.length; i += 1) {
   }
 }
 
+// Creating the popup-projects
+
+const $sectionPopupContainer = document.querySelector('#popup-container');
+
+for (let i = 0; i < $projectList.length; i += 1) {
+  const $article = document.createElement('section');
+  $article.classList.add('popup-section', 'no-visible');
+  $article.innerHTML = `<div class="title-menu">
+      <h3>${$projectList[i].title}</h3>
+      <img
+        id="popUp-close-btn"
+        alt="X button"
+        src="./Icons/Icon-Cancel.svg"
+      />
+    </div>
+    <ul>
+      <li>${$projectList[i].technologies.firstTechnologie}</li>
+      <li>${$projectList[i].technologies.secondTechnologie}</li>
+      <li>${$projectList[i].technologies.thirdTechnologie}</li>
+    </ul>
+    <div class="project-resume">
+      <div class="image-container">
+        <img
+          id="resume-image"
+          src="${$projectList[i].featureImage}"
+          alt="image whit a number ten and background pink"
+        />
+      </div>
+      <div class="text-container">
+        <p>
+        ${$projectList[i].description}
+        </p>
+        <ul>
+          <li class="link-button">
+            <a
+              target="_blank"
+              rel="noopener"
+              href=${$projectList[i].liveVersion}
+            >
+              See Live</a
+            >
+            <img
+              class="resume-icon"
+              alt="export icon"
+              src="Icons/Icon-Export.svg"
+            />
+          </li>
+          <li class="link-button">
+            <a
+              target="_blank"
+              rel="noopener"
+              href=${$projectList[i].sourceCode}
+            >
+              See Source</a
+            >
+            <img
+              class="resume-icon"
+              alt="export icon"
+              src="Icons/Icon-GitHub.svg"
+            />
+          </li>
+        </ul>
+      </div>
+    </div>`;
+  $sectionPopupContainer.appendChild($article);
+}
+
 $worksContainer.appendChild($gridSection);
+
+const $closeBtnPopup = document.querySelectorAll('#popUp-close-btn');
 
 // Open "See Project" Close button popup
 const $buttonsPopup = document.querySelectorAll('.popup-button');
-const $popupSection = document.querySelector('.popup-section');
+const $popupSection = document.querySelectorAll('.popup-section');
 const $header = document.getElementById('header-popup');
 const $main = document.getElementById('main-popup');
 
 for (let i = 0; i < $buttonsPopup.length; i += 1) {
   $buttonsPopup[i].addEventListener('click', () => {
-    $popupSection.classList.remove('no-visible');
+    $popupSection[i].classList.remove('no-visible');
     $header.classList.add('blur');
     $main.classList.add('blur');
-    $html.classList.add('disable-scroll');
+    // $html.classList.add('disable-scroll');
   });
 }
 
-const $closeBtnPopup = document.getElementById('popUp-close-btn');
-
-$closeBtnPopup.addEventListener('click', () => {
-  $popupSection.classList.add('no-visible');
-  $header.classList.remove('blur');
-  $main.classList.remove('blur');
-  $html.classList.remove('disable-scroll');
-});
+for (let i = 0; i < $buttonsPopup.length; i += 1) {
+  $closeBtnPopup[i].addEventListener('click', () => {
+    $popupSection[i].classList.add('no-visible');
+    $header.classList.remove('blur');
+    $main.classList.remove('blur');
+    $html.classList.remove('disable-scroll');
+  });
+}
 
 // Contact form validation
 

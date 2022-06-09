@@ -108,7 +108,7 @@ body {
 }
 
 .nav-mobile-menu ul li a:hover {
-  color:#e05304;
+  color: #e05304;
   filter: brightness(1.25);
 }
 
@@ -256,8 +256,8 @@ body {
 }
 
 #image-recent-works {
-  width: 327px;
-  height: 237px;
+  width: 100%;
+  height: 100%;
   align-items: center;
 }
 
@@ -454,13 +454,13 @@ li" */
 }
 
 #button-resume {
-	background-color: rgb(245, 88, 0);
-	color: white;
-	padding: 10px;
-	font-family: 'Inter', sans-serif;
-	font-weight: 700;
-	font-size: 17px;
-	line-height: 24px;
+  background-color: rgb(245, 88, 0);
+  color: white;
+  padding: 10px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
 }
 
 #button-resume:hover {
@@ -950,7 +950,6 @@ footer {
 
   #about-me-image-desktop {
     display: block;
-
   }
 
   .container-top-section-about-me-desktop {
@@ -1118,16 +1117,18 @@ footer {
 .project-resume p {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 30px;
+  line-height: 80px;
 }
 
 .image-container {
+  display: flex;
+  justify-content: center;
   margin-bottom: 24px;
 }
 
 #resume-image {
-  width: 100%;
+  width: 80%;
   height: auto;
 }
 
@@ -1194,6 +1195,7 @@ footer {
   }
 
   .project-resume .image-container {
+    display: block;
     margin-bottom: 10px;
   }
 
