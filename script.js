@@ -259,7 +259,8 @@ for (let i = 0; i < $buttonsPopup.length; i += 1) {
     $popupSection[i].classList.remove('no-visible');
     $header.classList.add('blur');
     $main.classList.add('blur');
-    // $html.classList.add('disable-scroll');
+    // $popupSection[i].classList.add('.disable-scroll');
+    $html.classList.add('disable-scroll');
   });
 }
 
