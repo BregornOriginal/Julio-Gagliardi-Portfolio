@@ -363,6 +363,18 @@ body {
   justify-content: flex-end;
 }
 
+  .secondary-card.grid-1:hover {
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url(./images/Screenshoot-Budget_app/Transactions.png);
+  }
+
+  .secondary-card.grid-2:hover {
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url(./images/Screenshoot-react_capstone/Card.png);
+  }
+
 .secondary-card h4 {
   font-family: 'Crete Round', sans-serif;
   font-weight: 400;
@@ -934,12 +946,6 @@ footer {
 
   .secondary-card:hover ul {
     display: none;
-  }
-
-  .secondary-card.grid-1:hover {
-    background-image:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-    url(./images/Screenshoot-Budget_app/Transactions.png);
   }
 
   .secondary-card:hover .full-width-btn {
