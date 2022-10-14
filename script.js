@@ -44,8 +44,8 @@ $contact.addEventListener('click', () => {
 // Object details
 
 const $projectList = [{
-  title: 'Capstone Module 1 Microverse',
-  description: 'First Capstone for Microverse Bootcamp! I choose a topic about the Lord Of The Ring, and create a fictitious website of his Anniversary.',
+  title: 'LOTR Movies Anniversary',
+  description: 'First Capstone for Microverse! I choose a topic about the Lord Of The Ring, and create a fictitious website of his Anniversary.',
   featureImage: './images/Screenshoot-Project 1/Capstone-module-1-mobile.png',
   technologies: {
     firstTechnologie: 'CSS',
@@ -56,16 +56,16 @@ const $projectList = [{
   liveVersion: 'https://bregornoriginal.github.io/capstone-module1/',
   sourceCode: 'https://github.com/BregornOriginal/capstone-module1/',
 }, {
-  title: 'Data Dashboard Healthcare',
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
-  featureImage: './images/image-background-data-dashboard.svg',
+  title: 'Budget App',
+  description: 'In this Capstone of RoR, I should create an app where the user can Log_in and Sig_up on it. Inside the app, the user can add transactions for each category',
+  featureImage: './images/Screenshoot-Budget_app/Categories.png',
   technologies: {
-    firstTechnologie: 'HTML',
-    secondTechnologie: 'Bootstrap',
-    thirdTechnologie: 'Ruby',
+    firstTechnologie: 'Ruby on Rails',
+    secondTechnologie: 'SCSS',
+    thirdTechnologie: 'Postgresql',
   },
-  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio/',
-  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio',
+  liveVersion: 'https://bregorn-budget-app.herokuapp.com/',
+  sourceCode: 'https://github.com/BregornOriginal/Budget-app',
 },
 {
   title: 'Data Dashboard Healthcare',

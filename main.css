@@ -936,8 +936,10 @@ footer {
     display: none;
   }
 
-  .secondary-card:hover {
-    background-image: url(./images/image-background-works-main.svg);
+  .secondary-card.grid-1:hover {
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url(./images/Screenshoot-Budget_app/Transactions.png);
   }
 
   .secondary-card:hover .full-width-btn {
