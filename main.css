@@ -349,6 +349,7 @@ body {
 
 .grid-section article {
   margin-bottom: 24px;
+  padding-top: 180px;
 }
 
 .secondary-card {
@@ -372,7 +373,13 @@ body {
   .secondary-card.grid-2:hover {
     background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-    url(./images/Screenshoot-react_capstone/Card.png);
+    url(./images/Screenshoot-react_capstone/thumbnail.png);
+  }
+
+  .secondary-card.grid-3:hover {
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url(./images/Math-Magicians/thumbnail.png);
   }
 
 .secondary-card h4 {
