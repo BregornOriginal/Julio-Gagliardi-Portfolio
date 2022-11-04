@@ -92,16 +92,16 @@ const $projectList = [{
   sourceCode: 'https://github.com/BregornOriginal/math-magicians',
 },
 {
-  title: 'Data Dashboard Healthcare',
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
-  featureImage: './images/image-background-data-dashboard.svg',
+  title: 'ezCr',
+  description: 'This project consumes our own API to allow users to rent a car in a React UI.',
+  featureImage: './images/ezCar/ezCar.png',
   technologies: {
-    firstTechnologie: 'HTML',
-    secondTechnologie: 'Bootstrap',
-    thirdTechnologie: 'Ruby',
+    firstTechnologie: 'Ruby on Rails',
+    secondTechnologie: 'PostgreSQL',
+    thirdTechnologie: 'React/Redux',
   },
-  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio/',
-  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio',
+  liveVersion: 'https://ezcar.netlify.app/cars',
+  sourceCode: 'https://github.com/indigodavid/ezCar_frontend',
 },
 {
   title: 'Data Dashboard Healthcare',
@@ -112,7 +112,7 @@ const $projectList = [{
     secondTechnologie: 'Bootstrap',
     thirdTechnologie: 'Ruby',
   },
-  liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio/',
+  liveVersion: 'https://bregorn-recipe-app.herokuapp.com/',
   sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio',
 },
 {

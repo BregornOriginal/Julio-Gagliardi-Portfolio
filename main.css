@@ -382,6 +382,12 @@ body {
     url(./images/Math-Magicians/thumbnail.png);
   }
 
+  .secondary-card.grid-4:hover {
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url(./images/ezCar/ezCar.png);
+  }
+
 .secondary-card h4 {
   font-family: 'Crete Round', sans-serif;
   font-weight: 400;
@@ -819,7 +825,7 @@ footer {
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
-    width: auto;
+    max-width: 900px;
     height: 123px;
     color: #f4f5f7;
     padding: 0 146px 0 0;
