@@ -46,7 +46,7 @@ $contact.addEventListener('click', () => {
 const $projectList = [{
   title: 'LOTR Movies Anniversary',
   description: 'First Capstone for Microverse! I choose a topic about the Lord Of The Ring, and create a fictitious website of his Anniversary.',
-  featureImage: '/images/LOTR Anniversary/LOTR Anniversary MOKUP.png',
+  featureImage: './images/LOTR Anniversary/LOTR Anniversary MOKUP.png',
   technologies: {
     firstTechnologie: 'CSS',
     secondTechnologie: 'HTML',
@@ -70,7 +70,7 @@ const $projectList = [{
 {
   title: 'Colection of Cards',
   description: 'In this project, the requirement were to follow a disign as example to show on the home page a list of elements that was getted from an API',
-  featureImage: '/images/Magic-The-Gathering/Mockup screenshoot.png',
+  featureImage: './images/Magic-The-Gathering/Mockup screenshoot.png',
   technologies: {
     firstTechnologie: 'React',
     secondTechnologie: 'Redux',
