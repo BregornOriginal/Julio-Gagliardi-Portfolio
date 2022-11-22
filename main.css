@@ -355,9 +355,9 @@ body {
 .secondary-card {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-    url(./images/image-background-works-main.svg);
+    url(./images/full-stack-developer.png);
   background-repeat: no-repeat, no-repeat;
-  background-size: cover, cover;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-content: flex-end;
@@ -367,19 +367,19 @@ body {
 .secondary-card.grid-1:hover {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-    url(./images/Screenshoot-Budget_app/Transactions.png);
+    url(./images/Screenshoot-Budget_app/Tablet.png);
 }
 
 .secondary-card.grid-2:hover {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-    url(./images/Magic-The-Gathering/thumbnail.png);
+    url(./images/Magic-The-Gathering/tablet.png);
 }
 
 .secondary-card.grid-3:hover {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-    url(./images/Math-Magicians/thumbnail.png);
+    url(./images/Math-Magicians/tablet.png);
 }
 
 .secondary-card.grid-4:hover {
@@ -441,7 +441,7 @@ li" */
 }
 
 .grid-section .secondary-card li {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgb(255, 107, 0, 0.2);
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 15px;

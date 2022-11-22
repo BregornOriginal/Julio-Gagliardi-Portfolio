@@ -58,7 +58,7 @@ const $projectList = [{
 }, {
   title: 'Budget App',
   description: 'In this Capstone of RoR, I should create an app where the user can Log_in and Sig_up on it. Inside the app, the user can add transactions for each category',
-  featureImage: './images/Screenshoot-Budget_app/Categories.png',
+  featureImage: './images/Screenshoot-Budget_app/all-devices-black.png',
   technologies: {
     firstTechnologie: 'Ruby on Rails',
     secondTechnologie: 'SCSS',
