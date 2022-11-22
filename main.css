@@ -364,29 +364,29 @@ body {
   justify-content: flex-end;
 }
 
-  .secondary-card.grid-1:hover {
-    background-image:
+.secondary-card.grid-1:hover {
+  background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
     url(./images/Screenshoot-Budget_app/Transactions.png);
-  }
+}
 
-  .secondary-card.grid-2:hover {
-    background-image:
+.secondary-card.grid-2:hover {
+  background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-    url(./images/Screenshoot-react_capstone/thumbnail.png);
-  }
+    url(./images/Magic-The-Gathering/thumbnail.png);
+}
 
-  .secondary-card.grid-3:hover {
-    background-image:
+.secondary-card.grid-3:hover {
+  background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
     url(./images/Math-Magicians/thumbnail.png);
-  }
+}
 
-  .secondary-card.grid-4:hover {
-    background-image:
+.secondary-card.grid-4:hover {
+  background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
     url(./images/ezCar/ezCar.png);
-  }
+}
 
 .secondary-card h4 {
   font-family: 'Crete Round', sans-serif;

@@ -46,14 +46,14 @@ $contact.addEventListener('click', () => {
 const $projectList = [{
   title: 'LOTR Movies Anniversary',
   description: 'First Capstone for Microverse! I choose a topic about the Lord Of The Ring, and create a fictitious website of his Anniversary.',
-  featureImage: './images/Screenshoot-Project 1/Capstone-module-1-mobile.png',
+  featureImage: '/images/LOTR Anniversary/LOTR Anniversary MOKUP.png',
   technologies: {
     firstTechnologie: 'CSS',
     secondTechnologie: 'HTML',
     thirdTechnologie: 'JavasCript',
 
   },
-  liveVersion: 'https://bregornoriginal.github.io/capstone-module1/',
+  liveVersion: 'https://bregornoriginal.github.io/L-O-T-R-Anniversary/',
   sourceCode: 'https://github.com/BregornOriginal/capstone-module1/',
 }, {
   title: 'Budget App',
@@ -70,7 +70,7 @@ const $projectList = [{
 {
   title: 'Colection of Cards',
   description: 'In this project, the requirement were to follow a disign as example to show on the home page a list of elements that was getted from an API',
-  featureImage: './images/Screenshoot-react_capstone/Filter.png',
+  featureImage: '/images/Magic-The-Gathering/Mockup screenshoot.png',
   technologies: {
     firstTechnologie: 'React',
     secondTechnologie: 'Redux',
@@ -82,7 +82,7 @@ const $projectList = [{
 {
   title: 'Math Magicians',
   description: '"Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA)',
-  featureImage: './images/Math-Magicians/calculator-screenshoot.png',
+  featureImage: './images/Math-Magicians/Home-mokup-screenshoot.png',
   technologies: {
     firstTechnologie: 'JS ES6',
     secondTechnologie: 'React/Redux',
