@@ -44,14 +44,29 @@ $contact.addEventListener('click', () => {
 // Object details
 
 const $projectList = [{
+  title: 'Next-Portfolio',
+  description: 'This portfolio was created with Next.js. The goal of this is to show a simple first screen of my software development projects and to have the opportunity to be in contact with whatever want to talk about coding or start some work.',
+  featureImage: './images/next-portfolio/experience-screenshoot.png',
+  technologies: {
+    firstTechnologie: 'Next.js',
+    secondTechnologie: 'React.js',
+    thirdTechnologie: 'Sanity.io',
+    fourthTechnologie: 'Tailwind',
+    fiftyTechnologie: 'TypeScript',
+  },
+  liveVersion: 'https://julio-gagliardi-portfolio.vercel.app/',
+  sourceCode: 'https://github.com/BregornOriginal/next-portfolio',
+},
+{
   title: 'LOTR Movies Anniversary',
   description: 'First Capstone for Microverse! I choose a topic about the Lord Of The Ring, and create a fictitious website of his Anniversary.',
-  featureImage: './images/LOTR Anniversary/LOTR Anniversary MOKUP.png',
+  featureImage: './images/LOTR-Anniversary/LOTR-Anniversary-MOKUP.png',
   technologies: {
     firstTechnologie: 'CSS',
     secondTechnologie: 'HTML',
     thirdTechnologie: 'JavasCript',
-
+    fourthTechnologie: 'Git',
+    fiftyTechnologie: 'CD/CI',
   },
   liveVersion: 'https://bregornoriginal.github.io/L-O-T-R-Anniversary/',
   sourceCode: 'https://github.com/BregornOriginal/capstone-module1/',
@@ -60,9 +75,11 @@ const $projectList = [{
   description: 'In this Capstone of RoR, I should create an app where the user can Log_in and Sig_up on it. Inside the app, the user can add transactions for each category',
   featureImage: './images/Screenshoot-Budget_app/all-devices-black.png',
   technologies: {
-    firstTechnologie: 'Ruby on Rails',
-    secondTechnologie: 'SCSS',
-    thirdTechnologie: 'Postgresql',
+    firstTechnologie: 'RoR',
+    secondTechnologie: 'SASS',
+    thirdTechnologie: 'PostgreSQL',
+    fourthTechnologie: 'Devise',
+    fiftyTechnologie: 'CanCanCan',
   },
   liveVersion: 'https://bregorn-budget-app.herokuapp.com/',
   sourceCode: 'https://github.com/BregornOriginal/Budget-app',
@@ -75,6 +92,8 @@ const $projectList = [{
     firstTechnologie: 'React',
     secondTechnologie: 'Redux',
     thirdTechnologie: 'JavaScript ES6',
+    fourthTechnologie: 'Jest',
+    fiftyTechnologie: 'GitHub CI/CD',
   },
   liveVersion: 'https://bregorn-magic-the-gathering.netlify.app/',
   sourceCode: 'https://github.com/BregornOriginal/react-capstone-module-3',
@@ -85,8 +104,10 @@ const $projectList = [{
   featureImage: './images/Math-Magicians/Home-mokup-screenshoot.png',
   technologies: {
     firstTechnologie: 'JS ES6',
-    secondTechnologie: 'React/Redux',
-    thirdTechnologie: 'Webpack/Jest',
+    secondTechnologie: 'React',
+    thirdTechnologie: 'Webpack',
+    fourthTechnologie: 'Redux',
+    fiftyTechnologie: 'Jest',
   },
   liveVersion: 'https://bregorn-calculator.netlify.app/',
   sourceCode: 'https://github.com/BregornOriginal/math-magicians',
@@ -96,33 +117,25 @@ const $projectList = [{
   description: 'This project consumes our own API to allow users to rent a car in a React UI.',
   featureImage: './images/ezCar/ezCar.png',
   technologies: {
-    firstTechnologie: 'Ruby on Rails',
+    firstTechnologie: 'RoR',
     secondTechnologie: 'PostgreSQL',
-    thirdTechnologie: 'React/Redux',
+    thirdTechnologie: 'React',
+    fourthTechnologie: 'Redux',
+    fiftyTechnologie: 'Tailwind/MUI',
   },
   liveVersion: 'https://ezcar.netlify.app/cars',
   sourceCode: 'https://github.com/indigodavid/ezCar_frontend',
 },
 {
-  title: 'Data Dashboard Healthcare',
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
+  title: 'Prode',
+  description: 'ON WORK - AVAIBLE SOON',
   featureImage: './images/image-background-data-dashboard.svg',
   technologies: {
-    firstTechnologie: 'HTML',
-    secondTechnologie: 'Bootstrap',
-    thirdTechnologie: 'Ruby',
-  },
-  liveVersion: 'https://bregorn-recipe-app.herokuapp.com/',
-  sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio',
-},
-{
-  title: 'Data Dashboard Healthcare',
-  description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard',
-  featureImage: './images/image-background-data-dashboard.svg',
-  technologies: {
-    firstTechnologie: 'HTML',
-    secondTechnologie: 'Bootstrap',
-    thirdTechnologie: 'Ruby',
+    firstTechnologie: 'React',
+    secondTechnologie: 'MySQL',
+    thirdTechnologie: 'JavaScript',
+    fourthTechnologie: 'Nest.js',
+    fiftyTechnologie: 'Node.js',
   },
   liveVersion: 'https://bregornoriginal.github.io/Julio-Gagliardi-Portfolio/',
   sourceCode: 'https://github.com/BregornOriginal/Julio-Gagliardi-Portfolio',
@@ -154,6 +167,8 @@ for (let i = 0; i < $projectList.length; i += 1) {
     <li class="technologies-works-one">${$projectList[i].technologies.firstTechnologie}</li>
     <li class="technologies-works-one">${$projectList[i].technologies.secondTechnologie}</li>
     <li class="technologies-works-one">${$projectList[i].technologies.thirdTechnologie}</li>
+    <li class="technologies-works-one">${$projectList[i].technologies.fourthTechnologie}</li>
+    <li class="technologies-works-one">${$projectList[i].technologies.fiftyTechnologie}</li>
     </ul>
     <a class="button-see-project-multi-post-stories popup-button" href="#">See Project</a>
   </div>
@@ -170,6 +185,8 @@ for (let i = 0; i < $projectList.length; i += 1) {
   <li>${$projectList[i].technologies.firstTechnologie}</li>
   <li>${$projectList[i].technologies.secondTechnologie}</li>
   <li>${$projectList[i].technologies.thirdTechnologie}</li>
+  <li>${$projectList[i].technologies.fourthTechnologie}</li>
+  <li>${$projectList[i].technologies.fiftyTechnologie}</li>
 </ul>
   <a class="full-width-btn popup-button" href="#">See Project</a>
 `;

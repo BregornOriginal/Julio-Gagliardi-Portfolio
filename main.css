@@ -255,6 +255,10 @@ body {
   justify-content: space-around;
 }
 
+.image-recent-works-container:hover {
+  filter: brightness(1.5);
+}
+
 #image-recent-works {
   width: 100%;
   height: 100%;
@@ -367,22 +371,28 @@ body {
 .secondary-card.grid-1:hover {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-    url(./images/Screenshoot-Budget_app/Tablet.png);
+    url(./images/LOTR-Anniversary/LOTR-Anniversary-mobile.png);
 }
 
 .secondary-card.grid-2:hover {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-    url(./images/Magic-The-Gathering/tablet.png);
+    url(./images/Screenshoot-Budget_app/Tablet.png);
 }
 
 .secondary-card.grid-3:hover {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-    url(./images/Math-Magicians/tablet.png);
+    url(./images/Magic-The-Gathering/tablet.png);
 }
 
 .secondary-card.grid-4:hover {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url(./images/Math-Magicians/tablet.png);
+}
+
+.secondary-card.grid-5:hover {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
     url(./images/ezCar/ezCar.png);
@@ -408,8 +418,9 @@ body {
 
 .secondary-card ul {
   display: flex;
+  justify-content: space-between;
   list-style-type: none;
-  margin: 0 0 10px 16px;
+  margin: 0 16px 10px 16px;
   padding: 0;
 }
 
@@ -447,7 +458,8 @@ li" */
   font-size: 15px;
   color: white;
   padding: 10px 12px;
-  margin-right: 10px;
+
+  /* margin-right: 10px; */
 }
 
 /* On forward continue whit the last section "About me" */
@@ -926,7 +938,7 @@ footer {
     display: grid;
     gap: 10px;
     grid-template-rows: 3fr 2.5fr;
-    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    grid-template-columns: repeat(auto-fit, minmax(398px, 1fr));
   }
 
   .full-width-btn {
